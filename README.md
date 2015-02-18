@@ -4,8 +4,8 @@
 Plataforma gratuita de educación online.
 
 
-#### TODO
- - [X] Diseño básico (13/02/15)
+#### ToDo
+ - [ ] Diseño básico (13/02/15)
  - [X] Diseño completo y diseño base de datos (20/02/15)
  - [ ] Plantilla primaria creada en HTML y CSS (27/02/15)
  - [ ] Creación de todas las otras páginas (06/03/15)
