@@ -1,4 +1,4 @@
-﻿/*Breve normalización...*/
+/*Breve normalización...*/
 ul {
 	margin: 0;
 	padding: 0;
@@ -40,7 +40,6 @@ body {
 	display: inline-block;
 	padding: 5px;
 	color: white;
-	padding-bottom: 5px;
 }
 
 #headerNoLogin {
@@ -120,22 +119,26 @@ body {
 
 /*Bloque 1*/
 .block1BG {
-	background-image: url('../resources/background/imgbg2.jpg');
+	background-image: url('../resources/background/imgbg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	vertical-align: center;
-	height: 600px;
+	height: 100%;
 	color: white;
+}
+#block1{
+	padding: 50px;
 }
 
 #block1 > h1 {
 	font-size: 40px;
-	margin-right: 15px;
 }
 
 #block1 > ul > a > li {
-	display: inline-block;
 	color: white;
+}
+#block1 ul a li p{
+	display: inline-block;
 }
 
 /*blank Space*/
@@ -164,12 +167,12 @@ body {
 	text-align: center;
 }
 
-.courseImg img{
-	width: 100%;
-	height: 100%;
+.courseImg {
+	width: 75px;
+	height: 75px;
 }
 
-.courseTitle {
+.courseName {
 	font-size: 18px;
 }
 
@@ -178,28 +181,27 @@ body {
 	background-color: #8FC7DB;
 	/*background-color: #A7CFDB; OLD COLOR*/
 	border-top: #6AACC3 2px solid;
+	text-align: center;
+	width: 100%;
+}
+#pageFooter ul li{
+	display: inline-block;
+	margin: 0px 20px 0px 20px;
 }
 
-.leftFooter {
-	float: left;
-	width: 50%;
-	border-right: 1px solid #cccccc;
-}
-.rightFooter {
-	float: left;
-	width: 40%;
-	padding: 5px;
+#pageFooter p{
+	font-size: 12px;
 }
 
+#pageFooter img{
+	width: 20px;
+	height: 20px;
+	margin-top: 10px;
+}
+.imgFooter{
+	height: 100%;
+}
 .clearFix {
 	overflow: auto;
 	width: 100%;
-}
-
-.levelTwo {
-	padding-left: 7.5px;
-}
-
-.levelThree {
-	padding-left: 15px;
 }

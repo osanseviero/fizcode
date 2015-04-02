@@ -2,7 +2,6 @@
     width:100%;
     overflow:auto;
 }
-
 label {
 	display: block;
 	font-size: 18px;
@@ -14,14 +13,14 @@ input[type="password"],
 input[type="email"] {
 	background: rgba(255,255,255,0.1);
 	font-size: 16px;
-	padding: 15px 15px 15px 15px;
+	padding: 15px;
     width: 668px;
 	width: calc(100% - 32px);
-	min-width: 250px;
+	min-width: 200px;
 	max-width: 698px;
 	background-color: #e8eeef;
 	color: #2D3337;
-	margin: 2px 0px 20px 0px;
+	margin: 20px 0px 20px 0px;
 	border: none;
 	border: 1px solid #2482C0;
 	border-radius: 3px;
@@ -29,21 +28,22 @@ input[type="email"] {
 
 #logInForm {
     width: 100%;
-	min-width: 315px;
+	min-width: 220px;
 	max-width: 400px;
 	padding-bottom: 20px;
 	border: 2px solid gray;
 	border-radius: 5px;
 	background-color: rgb(230, 230, 230);
-	margin: 15px auto 15px auto;
+	margin: auto;
 	padding: 15px;
     float: right;
+    position: inherit;
 }
 
 button {
 	display: block;
-	min-width: 320px;
-	max-width: 600px;
+	min-width: 220px;
+	max-width: 350px;
 	color: #FFF;
 	padding: 15px 0px 15px;
 	font-size: 18px;

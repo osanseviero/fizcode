@@ -1,4 +1,4 @@
-﻿/*Breve normalización...*/
+/*Breve normalización...*/
 ul {
 	margin: 0;
 	padding: 0;
@@ -40,7 +40,6 @@ body {
 	display: inline-block;
 	padding: 5px;
 	color: white;
-	padding-bottom: 5px;
 }
 
 #headerNoLogin {
@@ -120,7 +119,7 @@ body {
 
 /*Bloque 1*/
 .block1BG {
-	background-image: url('../resources/background/imgbg2.jpg');
+	background-image: url('../resources/background/imgbg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	vertical-align: center;
@@ -130,7 +129,6 @@ body {
 
 #block1 > h1 {
 	font-size: 40px;
-	margin-right: 15px;
 }
 
 #block1 > ul > a > li {
@@ -164,9 +162,9 @@ body {
 	text-align: center;
 }
 
-.courseImg img{
-	width: 100%;
-	height: 100%;
+.courseImg {
+	width: 75px;
+	height: 75px;
 }
 
 .courseTitle {
@@ -182,13 +180,12 @@ body {
 
 .leftFooter {
 	float: left;
-	width: 50%;
-	border-right: 1px solid #cccccc;
+	width: 60%;
 }
+
 .rightFooter {
 	float: left;
 	width: 40%;
-	padding: 5px;
 }
 
 .clearFix {
