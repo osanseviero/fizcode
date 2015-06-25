@@ -5,76 +5,113 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/normalize.css" type="text/css">
 		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="shortcut icon" href="resources/Logo/FizcodeIcon.ico">
 		<title>Fizcode</title>
 	</head>
 	<body>
 		<header id="headerNoLogin">
-			<nav class="center960">
-				<ul>
-					<a href="index.html">
-						<li class="left"><img src="resources/logo.png" alt="logo" class="logo"></li>
-					</a>
-					<a href="courses.html">
-						<li class="left">Cursos</li>
-					</a>
-					<a href="#">
-						<li class="right callToAction">Iniciar Sesión</li>
-					</a>
-					<a href="signUp.html">
-						<li class="right softUnderline">Registrarse</li>
-					</a>
-				</ul>
-			</nav>
+			<div class="centerVertical">
+				<nav class="center960 size20">
+					<ul>
+						<a href="index.html">
+							<li class="left"><img src="resources/Logo/smalllogo.png" alt="logo" class="logo"></li>
+						</a>
+						<!-- <a href="courses.html">
+							<li class="left">Cursos</li>
+						</a> -->
+						<a href="#">
+							<li class="right callToAction OrangeButton">Registrarse</li>
+						</a>
+						<a href="signUp.html">
+							<li class="right softUnderline size18">Iniciar Sesión</li>
+						</a>
+					</ul>
+				</nav>
+			</div>
 		</header>
 		<div>
-			<div class="headerSpace"></div>
-				<div class="block1BG">
-					<section id="block1" class="center960">
-						<h1>Aprende a programar facilmente</h1>
-						<a href="signUp.html"><div class="callToAction size20">Regístrate ya!</div></a>
-						<p>Tambien con:</p>
-						<ul>
-							<a href="#">
-							<li>
-								<img src="resources/fb.png" alt="" class="logo">Facebook
-								</li>
-							</a>
-							<br>
-							<a href="#">
-								<li>
-									<img src="resources/tw.png" alt="" class="logo">Twitter
-								</li>
-							</a>
-						</ul>
-					</section>
-				</div>
+			<span class="space50 block"></span>
+			<div id="block1BG">											<!-- First Section -->
+				<section id="block1" class="center960">
+					<span class="space20 block"></span>
+					<span class="lightHighlight size40 title">Aprende a programar gratis y de una forma intuitiva!</span>
+					<span class="space10 block"></span>
+					<span class="lightHighlight size18 subtitle">Lecciones de:</span>
+					<span class="space0 block"></span>
+					<ul class="lightHighlight prettyBullet size18 subtitle">
+						<li>Programacion</li>
+						<li>Diseño</li>
+						<li>Teoria de la Computacion</li>
+						<li>y muchos mas futuramente</li>
+					</ul>
+					<span class="space20 block"></span>
+																		<!-- First Option Register Buttons -->
+<!-- 					<a href="signUp.html"><span class="callToAction orangeButton size28">Regístrate ya!</span></a>
+					<span class="size14 noButton">También con:</span>
+					<a href="signUp.html"><span class="callToAction registerButton    FbBG"><img src="resources/fb.png" alt=""></img></span></a>
+					<a href="signUp.html"><span class="callToAction registerButton    TwBG"><img src="resources/tw.png" alt=""></img></span></a>
+					<a href="signUp.html"><span class="callToAction registerButton GplusBG"><img src="resources/tw.png" alt=""></img></span></a> -->
+					
+																		<!-- First Option Register Buttons (Backup)-->
+<!-- 					<span class="registerButtons">
+						<a href="signUp.html"><div class="callToAction size28 OrangeButton">Regístrate ya!</div></a>
+						<div class="size14 NoButton2">También con:</div>
+						<a href="signUp.html"><div class="registerChild callToAction    FbBG"><span class="size24">F </span></div></a>
+						<a href="signUp.html"><div class="registerChild callToAction    TwBG"><span class="size24">T </span></div></a>
+						<a href="signUp.html"><div class="registerChild callToAction GplusBG"><span class="size24">G+</span></div></a>
+					</span> -->
+																		<!-- Second Option Register Buttons -->
+					<div>
+						<a href="signUp.html"><div class="callToAction size28 OrangeButton2">Regístrate ya!</div></a>
+						<div class="size14 NoButton2">También con:</div>
+						<a href="signUp.html"><div class="callToAction size24 FbBG FbButton2">F</div></a>
+						<a href="signUp.html"><div class="callToAction size24 TwBG TwButton2">T</div></a>
+						<a href="signUp.html"><div class="callToAction size24 GplusBG GplusButton2">G+</div></a>
+					</div>
+					<span class="clearfix block"></span>
+				</section>
+			</div>
 			<div class="blankSpace"></div>
-			<div id="block2BG">
+			<div id="block2BG">											<!-- Second Section -->
 				<section id="block2" class="center960">
-					<h1 class="blockTitle">Tantas Posibilidades</h1>
+					<span class="space20 block"></span>
+					<span class="size30 title">Tantas Posibilidades</span>
+					<span class="size26 subtitle">Nuestros cursos</span>
+					<span class="space20 block"> </span>
 					<ul>
 						<li>
-							<img src="#" alt="#" class="courseImg">
-							<p class="courseTitle">Curso 1</p>
+							<img src="#" alt="" class="courseImg">
+							<p class="size18">Curso 1</p>
+							<!-- <p class="size14">23 lecciones</p> -->
 						</li>
 						<li>
-							<img src="#" alt="#" class="courseImg">
-							<p class="courseTitle">Curso 2</p>
+							<img src="#" alt="" class="courseImg soon">
+							<p class="size18">Curso 2</p>
 						</li>
 						<li>
-							<img src="#" alt="#" class="courseImg">
-							<p class="courseTitle">Curso 3</p>
+							<img src="#" alt="" class="courseImg soon">
+							<p class="size18">Curso 3</p>
 						</li>
 						<li>
-							<img src="#" alt="#" class="courseImg">
-							<p class="courseTitle">Curso 4</p>
+							<img src="#" alt="" class="courseImg soon">
+							<p class="size18">Curso 4</p>
 						</li>
 					</ul>
 				</section>
 			</div>
 			<div class="blankSpace"></div>
+			<div id="block3BG">											<!-- Third Section -->
+				<section id="block3" class="center960">
+					<span class="space20 block"></span>
+					<span class="size30 title">Qué es fizcode?</span>
+					<span class="size26 subtitle">Sobre Nosotros...</span>
+					<span class="space20 block"></span>
+				</section>
+			</div>
+			<div class="blankSpace"></div>
 		</div>
-		<footer id="pageFooter">
+																		<!-- First Option Footer -->
+<!-- 		<footer id="pageFooter"> 
 			<div class="center960">
 				<div class="clearFix">
 					<div class="leftFooter">
@@ -96,6 +133,42 @@
 							<li class="levelTwo"></li>
 						</ul>
 					</div>
+				</div>
+			</div>
+		</footer> -->
+																		<!-- Second Option Footer -->
+		<footer id="pageFooter2">
+			<div class="center960">
+				<div class="clearFix">
+					<ul class="size14">
+						<a href="">
+							<li class="strong">
+								Fizcode
+							</li>
+						</a>
+						<a href="">
+							<li>
+								&copy; Copyright 2015
+							</li>
+						</a>
+						<a href="">
+							<li>
+								Aviso Legal
+							</li>
+						</a>
+						<a href="">
+							<li>
+								Contacto
+							</li>
+						</a>
+						<a href="">
+							<li>
+								Blog
+							</li>
+						</a>
+						<a href=""><li><img class="TwBG" src="resources/tw.png"></li></a>
+						<a href=""><li><img class="FbBG" src="resources/fb.png"></li></a>
+					</ul>
 				</div>
 			</div>
 		</footer>
