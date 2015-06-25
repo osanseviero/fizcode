@@ -114,13 +114,13 @@ body {
 }
 
 /*Header sin hacer login*/
-#headerNoLogin > div > nav > ul > a > li {
+header > div > nav > ul > a > li {
 	display: inline-block;
 	color: white;
 	margin: 0px 5px 0px 5px;
 }
 
-#headerNoLogin {
+header {
 	position: fixed;
 	width: 100%;
 	background: rgb(35,130,186); /* Old browsers */
@@ -152,7 +152,7 @@ body {
 }*/
 
 /*Bloque 1*/
-#block1BG {
+#first {
 	background-image: url('../resources/background/imgbg5.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
