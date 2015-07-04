@@ -29,22 +29,42 @@ header {
 		display: inline-block;
 		color: white;
 		margin: 0px 5px 0px 5px;
+		z-index: 1;
 	}
 
 	.logo {
-		width: 29px;
-		height: 32px;
+		width: 0px;
+		height: 0px;
 		margin: 0px 3px 0px 0px;
 		overflow: hidden;
+		position: relative;
+		z-index: -1;
+		left: -50px;
+
 
 		-webkit-transition: width .1s ease-out;
 		-o-transition: width .1s ease-out;
 		transition: width .1s ease-out;
 	}
 
-	.logo svg {
-		width: 84px;
+	.logo svg{
+		width: 0px;
+		height: 0px;
+		visibility: hidden;
+		left: -50px;
+		position: relative;
+		z-index: -1;
+	}
+
+	.logo-min{
+		opacity: 1;
+		width: 29px;
 		height: 32px;
+		margin: 0px 3px 0px 0px;
+		overflow: hidden;
+		float: left;
+		position: relative;
+		z-index: 1;
 	}
 
 	.OrangeButton:active { 
@@ -64,7 +84,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	vertical-align: center;
-	height: 600px;
+	height: 650px;
 	color: white;
 	display: block;
 	position: relative;
