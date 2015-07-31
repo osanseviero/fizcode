@@ -1,6 +1,7 @@
 ﻿body {
 	background-color: #f2f2f2;
 	font-family: 'Lato', Verdana, sans-serif;
+	overflow-x: hidden;
 }
 
 header {
@@ -33,58 +34,37 @@ header {
 	}
 
 	.logo {
-		width: 0px;
-		height: 0px;
+		width: 84px;
+		height: 32px;
 		margin: 0px 3px 0px 0px;
 		overflow: hidden;
 		position: relative;
-		z-index: -1;
-		left: -50px;
-
 
 		-webkit-transition: width .1s ease-out;
 		-o-transition: width .1s ease-out;
 		transition: width .1s ease-out;
 	}
 
-	.logo svg{
-		width: 0px;
-		height: 0px;
-		visibility: hidden;
-		left: -50px;
-		position: relative;
-		z-index: -1;
-	}
-
-	.logo-min{
-		opacity: 1;
-		width: 29px;
+	.logo :nth-child(1) {
+		position: absolute;
+		left: 0px;
+		width: 84px;
 		height: 32px;
-		margin: 0px 3px 0px 0px;
-		overflow: hidden;
-		float: left;
-		position: relative;
-		z-index: 1;
 	}
 
-	.OrangeButton:active { 
+/*	.OrangeButton:active { 
 		padding: 3px 5px 2px 5px; 
 		border-top: 1px solid #f26a00;
-}
-
-	.logo:hover {
-		width: 84px;
-		margin: 0px;
-	}
+	}*/
 
 /*Bloque 1*/
 #first {
-	background-image: url('../resources/background/imgbg5.jpg');
+	background-image: url('../../resources/background/imgbg5.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	vertical-align: center;
-	height: 650px;
+	min-height: 650px;
 	color: white;
 	display: block;
 	position: relative;
@@ -125,6 +105,17 @@ header {
 				background: linear-gradient(to bottom,  rgb(48,184,229) 0%,rgb(37,183,232) 56%,rgb(0,172,234) 100%); /* W3C */
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30b8e5', endColorstr='#00acea',GradientType=0 ); /* IE6-9 */
 			}
+			.GsigninBG {
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4285f4+0,3a76e5+55,3266d5+100 */
+				background: rgb(66,133,244); /* Old browsers */
+				background: -moz-linear-gradient(top,  rgb(66,133,244) 0%, rgb(58,118,229) 55%, rgb(50,102,213) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(66,133,244)), color-stop(55%,rgb(58,118,229)), color-stop(100%,rgb(50,102,213))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  rgb(66,133,244) 0%,rgb(58,118,229) 55%,rgb(50,102,213) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  rgb(66,133,244) 0%,rgb(58,118,229) 55%,rgb(50,102,213) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  rgb(66,133,244) 0%,rgb(58,118,229) 55%,rgb(50,102,213) 100%); /* IE10+ */
+				background: linear-gradient(to bottom,  rgb(66,133,244) 0%,rgb(58,118,229) 55%,rgb(50,102,213) 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4285f4', endColorstr='#3266d5',GradientType=0 ); /* IE6-9 */
+			}
 			.GplusBG {
 				background: rgb(214,72,56); /* Old browsers */
 				background: -moz-linear-gradient(top,  rgb(214,72,56) 0%, rgb(211,40,21) 56%, rgb(166,40,28) 100%); /* FF3.6+ */
@@ -152,24 +143,30 @@ header {
 				display: inline-block;
 				text-align: center;
 				width: 230px;
+				margin: 12px 0px 0px 0px;
 			}
 
 				.soon:before {
+					color: white;
 					content: "Proximamente";
 					font-size: 18px;
-					padding-top: 4px;
-					width: 141.4px;
-					height: 30px;
-					background-color: red;
+					padding-top: 6px;
+					background-image: url('../../resources/sprites/sprites.png');
+					background-size: 120%;
+					background-position: 0px 0px;
+					/*background-color: blue;*/
 
+					width: 141.4px;
+					height: 55px;
 					transform: rotate(45deg);
 					position: absolute;
 					display: block;
-					right: -30px;
-					top: 20px;
+					right: calc(-15px);
+					top: calc(36px - 10px);
 				}
 
 				.courseImg {
+					display: block;
 					width: 225px;
 					height: 225px;
 				}
@@ -177,7 +174,7 @@ header {
 /*Bloque 3*/
 #third { background-color: #EEEEEE; }
 
-	#block3 { min-height: 400px; }
+	#block3 { min-height: 400px; padding-bottom: 20px;}
 
 
 /*Footer2*/

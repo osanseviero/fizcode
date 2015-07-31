@@ -34,30 +34,3 @@ body{
 		width: calc(45% - 65px);
 		margin: 0px 2px 0px 2px;
 	}
-
-.logo-min {
-	opacity: 0;
-	width: 0px;
-	height: 0px;
-	margin: 0px 3px 0px 0px;
-	overflow: hidden;
-	float: left;
-	position: relative;
-	z-index: -1;
-}
-.logo {
-	position: relative;
-	opacity: 1;
-	width: 29px;
-	height: 32px;
-	margin: 0px 3px 0px 0px;
-	left: 0px;
-	z-index: 0;
-}
-.logo svg {
-	visibility: visible;
-	left: 0px;
-	width: 84px;
-	height: 32px;
-	z-index: 0;
-}

@@ -554,6 +554,12 @@ header, section, footer, aside, nav, article, figure {
 .centered960px {
     max-width: 960px;
     margin: auto;
+    /*padding: 0px 5px 0px 5px;*/
+}
+
+.centered1440px {
+    max-width: 1440px;
+    margin: auto;
     padding: 0px 5px 0px 5px;
 }
 
@@ -581,6 +587,11 @@ header, section, footer, aside, nav, article, figure {
 
 .callToAction:hover { border-radius: 3px; }
 
+.callToAction:active {
+    padding: 3px 5px 2px 5px; 
+    border-top: 1px solid #f26a00;
+}
+
 .space0  { height:  0px; }
 .space10 { height: 10px; }
 .space20 { height: 20px; }
@@ -602,8 +613,11 @@ header, section, footer, aside, nav, article, figure {
 .size30 { font-size: 30px; }
 .size40 { font-size: 40px; }
 
-.title    { margin-left: 10px; display: block; font-weight: 400;}
-.subtitle { margin-left: 25px; display: block; font-weight: 300;}
+h1    { margin: 0px 10px; display: block; font-weight: 400;}
+h3 { margin: 0px 15px; display: block; font-weight: 300;}
+h4 { margin: 0px; display: block; font-weight: 300;}
+p { margin: 0px; font-weight: 300;}
+.description { margin: 0px 8% 0px 8%; }
 
 .block {display: block;}
 
@@ -630,17 +644,33 @@ header, section, footer, aside, nav, article, figure {
     height: 5px;
 }
 
-.prettyBullet { margin-left: 25px; }
+.prettyBullet { margin: 0px 15px; }
+
+.prettyBullet p { display: inline; font-weight: 300;}
 
 .prettyBullet li:before {
     content: "";
-    background-image: url("../resources/sprites/bullet.png");
+    background-image: url("../resources/sprites/sprites.png");
     display: inline-block;
     position: relative;
     right: 4px;
-    background-size: 12px 12px;
+    background-position: -82.5px 0px;
+    background-size: 96px 192px;
     height: 12px;
     width: 12px;
+}
+
+main { counter-reset: prettyNumber; }
+
+.numberedBullet { padding: .5em; background-color: rgba(0,0,0,0.04); margin: 0px;}
+.numberedBullet p { display: inline; }
+.numberedBullet dt { display: block; }
+.numberedBullet p:before { 
+    counter-increment: prettyNumber;
+    content: counter(prettyNumber);
+
+    display: inline-block;
+    margin: 1px 8px 1px 8px;   
 }
 
 .separator {
