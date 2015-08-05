@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{=T.accepted_language or 'en'}}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{=response.title or request.application}}</title>
+    <meta name="application-name" content="{{=request.application}}">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{=URL('static','css/style.css')}}"/>
+    <link rel="stylesheet" href="{{=URL('static','css/style_small.css')}}" media="screen and (max-width:500px)"/>
+    <link rel="stylesheet" href="{{=URL('static','css/login.css')}}"/>
+	<link rel="stylesheet" href="{{=URL('static','css/login_small.css')}}" media="screen and (max-width:500px)"/>
+	<link rel="stylesheet" href="{{=URL('static','css/login_large.css')}}" media="screen and (min-width:500px)"/>
+	  <link rel="stylesheet" href="{{=URL('static','css/normalize.css')}}"/>
+    <link rel="shortcut icon" href="{{=URL('static','images/FizcodeIcon.ico')}}">
+    {{
+    mc0 = 'col-md-12'
+    mc1 = 'col-md-9'
+    mc2 = 'col-md-6'
+    middle_column = {0: mc0, 1: mc1, 2: mc2}
+    }}
+  </head>
+  <body>
+      <div>
+        {{block center}}
+        {{include}}
+        {{end}}
+      </div>
+  </body>
+</html>

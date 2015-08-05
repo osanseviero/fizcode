@@ -1,0 +1,824 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.NameError'> name 'udata' is not defined"
+p3
+sS'layer'
+p4
+S'C:\\Users\\maxse_000\\Downloads\\Installers_Setups\\web2py_win\\web2py\\applications\\fizcode\\views\\default/index.html'
+p5
+sS'code'
+p6
+S'response.write(\'<!DOCTYPE html>\\r\\n<html lang="\', escape=False)\nresponse.write(T.accepted_language or \'en\')\nresponse.write(\'">\\r\\n  <head>\\r\\n    <meta charset="utf-8">\\r\\n    <title>\', escape=False)\nresponse.write(response.title or request.application)\nresponse.write(\'</title>\\r\\n    <meta name="application-name" content="\', escape=False)\nresponse.write(request.application)\nresponse.write(\'">\\r\\n\\t<link href=\\\'http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic\\\' rel=\\\'stylesheet\\\' type=\\\'text/css\\\'>\\r\\n    <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'css/style.css\'))\nresponse.write(\'"/>\\r\\n    <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'css/style_small.css\'))\nresponse.write(\'" media="screen and (max-width:500px)"/>\\r\\n    <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'css/login.css\'))\nresponse.write(\'"/>\\r\\n\\t<link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'css/login_small.css\'))\nresponse.write(\'" media="screen and (max-width:500px)"/>\\r\\n\\t<link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'css/login_large.css\'))\nresponse.write(\'" media="screen and (min-width:500px)"/>\\r\\n\\t  <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'css/normalize.css\'))\nresponse.write(\'"/>\\r\\n    <link rel="shortcut icon" href="\', escape=False)\nresponse.write(URL(\'static\',\'images/FizcodeIcon.ico\'))\nresponse.write(\'">\\r\\n    \', escape=False)\nmc0 = \'col-md-12\'\nmc1 = \'col-md-9\'\nmc2 = \'col-md-6\'\nmiddle_column = {0: mc0, 1: mc1, 2: mc2}\nresponse.write(\'\\r\\n  </head>\\r\\n  <body>\\r\\n      <div>\\r\\n        \', escape=False)\nresponse.write(\'\\r\\n        \', escape=False)\nresponse.write(\'\\r\\n<!DOCTYPE html>\\r\\n<html lang="en">\\r\\n\\t<head>\\r\\n\\t\\t<meta charset="UTF-8">\\r\\n        \', escape=False)\nresponse.files.append(URL(\'static\',\'style.css\'))\nresponse.write(\'\\r\\n        \', escape=False)\nresponse.files.append(URL(\'static\',\'normalize.css\'))\nresponse.write(\'\\r\\n        \', escape=False)\nresponse.files.append(URL(\'static\',\'style_small.css\'))\nresponse.write(\'\\r\\n        \', escape=False)\nresponse.files.append(URL(\'static\',\'login.css\'))\nresponse.write(\'\\r\\n        \', escape=False)\nresponse.files.append(URL(\'static\',\'login-small.css\'))\nresponse.write(\'\\r\\n        \', escape=False)\nresponse.files.append(URL(\'static\',\'login_large.css\'))\nresponse.write(\'\\r\\n        \', escape=False)\nresponse.write(\'<script type="text/javascript"><!--\\n    // These variables are used by the web2py_ajax_init function in web2py_ajax.js (which is loaded below).\\n    var w2p_ajax_confirm_message = "\', escape=False)\nresponse.write(T(\'Are you sure you want to delete this object?\'))\nresponse.write(\'";\\n    var w2p_ajax_disable_with_message = "\', escape=False)\nresponse.write(T(\'Working...\'))\nresponse.write(\'";\\n    var w2p_ajax_date_format = "\', escape=False)\nresponse.write(T(\'%Y-%m-%d\'))\nresponse.write(\'";\\n    var w2p_ajax_datetime_format = "\', escape=False)\nresponse.write(T(\'%Y-%m-%d %H:%M:%S\'))\nresponse.write(\'";\\n    var ajax_error_500 = \\\'\', escape=False)\nresponse.write(T.M(\'An error occured, please [[reload %s]] the page\') % URL(args=request.args, vars=request.get_vars))\nresponse.write("\'\\n    //--></script>\\n", escape=False)\nresponse.files.insert(0,URL(\'static\',\'js/jquery.js\'))\nresponse.files.insert(1,URL(\'static\',\'css/calendar.css\'))\nresponse.files.insert(2,URL(\'static\',\'js/calendar.js\'))\nresponse.files.insert(3,URL(\'static\',\'js/web2py.js\'))\nresponse.include_meta()\nresponse.include_files()\nresponse.write(\'\\n\', escape=False)\nresponse.write(\'\\r\\n\\t\\t<link href=\\\'http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic\\\' rel=\\\'stylesheet\\\' type=\\\'text/css\\\'>\\r\\n\\t\\t<link rel="shortcut icon" href="\', escape=False)\nresponse.write(URL(\'static\',\'images/FizcodeIcon.ico\'))\nresponse.write(\'">\\r\\n\\t\\t<title>Fizcode</title>\\r\\n\\t</head>\\r\\n\\t<body>\\r\\n\\t\\t<header>\\r\\n\\t\\t\\t<nav class="centered960px size20">\\r\\n\\t\\t\\t\\t<ul>\\r\\n\\t\\t\\t\\t\\t<a href="index.html">\\r\\n\\t\\t\\t\\t\\t\\t<li class="left">\\r\\n                            <div class="logo">\\r\\n                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="335.25" height="128" viewBox="0 0 1341 512">\\r\\n                                    <defs>\\r\\n                                        <style>\\r\\n                                            .cls-1, .cls-2 {\\r\\n                                                fill: #fff;\\r\\n                                             }\\r\\n                                             .cls-1{\\r\\n                                                fill-rule: evenodd;\\r\\n                                             }\\r\\n                                        </style>\\r\\n                                     </defs>\\r\\n                                     <path d="M1267.356,268.471 C1263.594,276.185 1256.697,283.136 1246.664,289.319 C1236.632,295.505 1222.837,300.890 1205.280,305.476 C1187.724,310.063 1165.151,313.747 1137.561,316.525 C1137.421,318.056 1137.352,319.548 1137.352,321.008 C1137.352,322.467 1137.352,323.962 1137.352,325.490 C1137.352,344.116 1141.428,358.325 1149.579,368.124 C1157.731,377.922 1170.026,382.822 1186.470,382.822 C1193.158,382.822 1199.115,382.128 1204.340,380.737 C1209.565,379.349 1214.232,377.646 1218.344,375.629 C1222.452,373.616 1226.077,371.391 1229.212,368.958 C1232.347,366.528 1235.237,364.303 1237.886,362.286 C1240.531,360.273 1242.971,358.570 1245.201,357.179 C1247.429,355.791 1249.659,355.094 1251.890,355.094 C1254.398,355.094 1256.697,356.276 1258.787,358.638 L1267.983,370.104 C1260.877,377.473 1253.944,383.760 1247.187,388.972 C1240.427,394.184 1233.497,398.529 1226.390,402.002 C1219.284,405.477 1211.864,408.015 1204.131,409.611 C1196.398,411.207 1188.070,412.009 1179.154,412.009 C1167.032,412.009 1156.163,409.992 1146.549,405.963 C1136.934,401.933 1128.783,396.200 1122.095,388.763 C1115.406,381.330 1110.250,372.329 1106.628,361.765 C1103.003,351.205 1101.194,339.390 1101.194,326.324 C1101.194,315.483 1102.343,304.678 1104.642,293.906 C1106.941,283.136 1110.286,272.885 1114.675,263.155 C1119.064,253.428 1124.426,244.392 1130.768,236.053 C1137.107,227.714 1144.354,220.521 1152.505,214.475 C1160.657,208.429 1169.644,203.670 1179.468,200.194 C1189.291,196.722 1199.846,194.982 1211.133,194.982 C1221.861,194.982 1231.126,196.514 1238.931,199.569 C1246.733,202.628 1253.144,206.520 1258.160,211.244 C1263.176,215.970 1266.902,221.182 1269.342,226.880 C1271.778,232.580 1273.000,238.001 1273.000,243.141 C1273.000,252.314 1271.118,260.757 1267.356,268.471 ZM1238.095,236.782 C1236.978,234.072 1235.202,231.606 1232.765,229.381 C1230.326,227.160 1227.155,225.316 1223.255,223.857 C1219.353,222.397 1214.614,221.668 1209.043,221.668 C1200.264,221.668 1192.181,223.476 1184.797,227.088 C1177.410,230.704 1170.862,235.672 1165.151,241.994 C1159.435,248.320 1154.560,255.754 1150.520,264.302 C1146.477,272.849 1143.342,282.058 1141.114,291.925 C1162.571,289.286 1179.781,286.263 1192.740,282.856 C1205.698,279.452 1215.659,275.768 1222.628,271.807 C1229.594,267.846 1234.192,263.572 1236.423,258.985 C1238.650,254.399 1239.767,249.604 1239.767,244.600 C1239.767,242.099 1239.209,239.493 1238.095,236.782 ZM1024.075,409.090 C1019.196,409.090 1015.888,407.839 1014.147,405.337 C1012.403,402.836 1011.534,399.780 1011.534,396.164 L1015.506,352.175 C1010.209,361.212 1004.428,369.411 998.158,376.776 C991.888,384.144 985.304,390.431 978.406,395.643 C971.509,400.855 964.331,404.888 956.878,407.735 C949.423,410.582 941.862,412.009 934.201,412.009 C916.086,412.009 902.046,405.442 892.085,392.307 C882.122,379.173 877.141,360.097 877.141,335.080 C877.141,323.685 878.323,312.287 880.694,300.890 C883.062,289.495 886.442,278.582 890.831,268.158 C895.221,257.735 900.514,248.040 906.716,239.076 C912.915,230.111 919.812,222.365 927.408,215.830 C935.001,209.299 943.257,204.156 952.176,200.403 C961.091,196.650 970.428,194.774 980.183,194.774 C990.493,194.774 999.934,196.790 1008.504,200.820 C1017.073,204.853 1024.353,210.618 1030.345,218.124 L1044.767,102.001 L1081.344,102.001 L1043.304,409.090 L1024.075,409.090 ZM1007.981,228.339 C1000.594,225.284 993.142,223.753 985.617,223.753 C974.608,223.753 964.680,227.020 955.833,233.551 C946.983,240.086 939.459,248.529 933.260,258.881 C927.059,269.237 922.287,280.807 918.943,293.593 C915.599,306.382 913.927,318.959 913.927,331.327 C913.927,347.869 916.922,360.482 922.914,369.166 C928.904,377.854 937.336,382.196 948.205,382.196 C954.893,382.196 961.614,380.147 968.374,376.046 C975.131,371.948 981.679,366.248 988.021,358.951 C994.360,351.654 1000.281,342.970 1005.787,332.891 C1011.290,322.816 1016.061,311.802 1020.104,299.847 L1027.001,243.975 C1021.704,236.610 1015.365,231.398 1007.981,228.339 ZM820.400,373.649 C810.714,385.463 799.254,394.809 786.018,401.689 C772.779,408.569 758.566,412.009 743.380,412.009 C731.813,412.009 721.225,410.028 711.611,406.067 C701.997,402.106 693.705,396.373 686.739,388.867 C679.770,381.362 674.335,372.189 670.436,361.348 C666.533,350.507 664.584,338.139 664.584,324.239 C664.584,306.450 667.369,289.703 672.944,273.996 C678.516,258.292 686.144,244.532 695.831,232.717 C705.514,220.905 716.941,211.592 730.108,204.781 C743.276,197.973 757.521,194.566 772.851,194.566 C784.415,194.566 795.006,196.546 804.620,200.507 C814.235,204.468 822.523,210.201 829.492,217.707 C836.458,225.212 841.893,234.421 845.795,245.330 C849.695,256.243 851.647,268.575 851.647,282.335 C851.647,299.987 848.858,316.666 843.287,332.370 C837.712,348.077 830.083,361.837 820.400,373.649 ZM802.739,238.555 C795.074,228.688 783.997,223.753 769.507,223.753 C759.193,223.753 749.892,226.499 741.604,231.987 C733.312,237.480 726.242,244.845 720.389,254.086 C714.537,263.331 710.007,273.996 706.804,286.088 C703.597,298.179 701.997,310.828 701.997,324.031 C701.997,343.491 705.791,358.189 713.387,368.124 C720.980,378.062 732.094,383.030 746.725,383.030 C756.894,383.030 766.162,380.251 774.523,374.691 C782.883,369.134 789.990,361.733 795.842,352.488 C801.694,343.247 806.220,332.578 809.427,320.487 C812.631,308.395 814.235,295.749 814.235,282.543 C814.235,263.087 810.401,248.425 802.739,238.555 ZM635.323,240.639 C634.069,241.336 632.674,241.682 631.143,241.682 C629.190,241.682 627.276,240.815 625.395,239.076 C623.514,237.339 621.074,235.395 618.080,233.238 C615.082,231.085 611.319,229.140 606.793,227.401 C602.263,225.665 596.447,224.795 589.341,224.795 C579.726,224.795 570.634,227.401 562.065,232.613 C553.496,237.825 546.004,244.949 539.596,253.982 C533.186,263.018 528.134,273.719 524.443,286.088 C520.750,298.460 518.904,311.730 518.904,325.907 C518.904,334.526 519.878,342.344 521.831,349.361 C523.780,356.381 526.706,362.358 530.609,367.290 C534.508,372.225 539.283,376.046 544.926,378.756 C550.569,381.467 557.153,382.822 564.678,382.822 C570.948,382.822 576.519,382.164 581.398,380.841 C586.274,379.522 590.595,377.890 594.357,375.942 C598.119,373.997 601.427,371.876 604.285,369.583 C607.139,367.290 609.719,365.173 612.018,363.225 C614.317,361.280 616.407,359.648 618.289,358.325 C620.170,357.006 622.083,356.345 624.036,356.345 C626.822,356.345 629.190,357.527 631.143,359.889 L640.339,371.147 C633.092,379.069 626.231,385.672 619.752,390.952 C613.272,396.236 606.757,400.438 600.209,403.565 C593.658,406.692 586.865,408.881 579.831,410.132 C572.793,411.383 565.233,412.009 557.153,412.009 C544.890,412.009 534.058,409.924 524.652,405.754 C515.247,401.585 507.373,395.715 501.034,388.138 C494.692,380.564 489.885,371.460 486.612,360.827 C483.337,350.195 481.701,338.487 481.701,325.698 C481.701,308.603 484.382,292.205 489.748,276.498 C495.110,260.793 502.602,246.894 512.216,234.802 C521.831,222.710 533.254,213.052 546.494,205.823 C559.730,198.598 574.292,194.982 590.177,194.982 C604.109,194.982 615.813,197.452 625.290,202.383 C634.764,207.319 643.056,214.511 650.163,223.961 L638.458,237.929 C637.622,239.043 636.577,239.945 635.323,240.639 ZM461.851,221.355 C460.597,223.788 459.202,225.977 457.671,227.922 L335.609,380.111 L440.114,380.111 L436.770,409.090 L287.537,409.090 L289.418,393.663 C289.695,391.858 290.427,389.737 291.612,387.304 C292.795,384.874 294.225,382.545 295.897,380.320 L418.586,227.088 L315.753,227.088 L319.306,197.901 L466.031,197.901 L464.150,213.746 C463.869,216.387 463.105,218.925 461.851,221.355 ZM202.052,409.090 L227.551,197.901 L264.128,197.901 L238.629,409.090 L202.052,409.090 ZM196.099,132.963 C194.496,133.449 192.441,133.690 189.933,133.690 C188.679,133.690 187.321,133.690 185.858,133.690 C184.395,133.690 182.827,133.690 181.155,133.690 C175.162,133.690 169.623,134.556 164.539,136.289 C159.451,138.022 154.957,140.827 151.058,144.707 C147.155,148.586 143.879,153.645 141.234,159.880 C138.586,166.115 136.704,173.737 135.591,182.741 L133.083,202.071 L185.962,202.071 L182.409,228.756 L130.993,228.756 L109.883,402.210 L100.268,445.365 C97.897,455.789 91.490,461.001 81.039,461.001 L66.409,461.001 L94.625,229.381 L73.724,226.671 C71.353,225.977 69.472,225.003 68.081,223.753 C66.686,222.502 65.991,220.697 65.991,218.332 L67.663,202.071 L97.969,202.071 L100.477,181.640 C102.009,169.548 105.039,158.811 109.569,149.430 C114.096,140.048 119.811,132.126 126.708,125.663 C133.605,119.201 141.476,114.301 150.326,110.966 C159.173,107.630 168.683,105.962 178.856,105.962 C187.494,105.962 195.368,107.389 202.474,110.236 L198.921,129.331 C198.640,131.270 197.699,132.481 196.099,132.963 Z" class="cls-1"/>\\r\\n                                     <g>\\r\\n                                         <ellipse cx="253.297" cy="143.703" rx="19.891" ry="20.297" class="cls-2"/>\\r\\n                                         <ellipse cx="295.11" cy="106.25" rx="19.891" ry="20.281" class="cls-2"/>\\r\\n                                         <ellipse cx="236.453" cy="82.828" rx="23.453" ry="23.922" class="cls-2"/>\\r\\n                                         <g>\\r\\n                                         <path d="M275.410,38.217 L275.410,38.217 C276.112,37.872 277.052,38.220 277.508,38.994 L279.162,41.796 C279.619,42.570 279.420,43.477 278.718,43.821 L278.718,43.821 C278.016,44.166 277.077,43.818 276.620,43.044 L274.966,40.242 C274.509,39.468 274.708,38.562 275.410,38.217 Z" class="cls-1"/>\\r\\n                                         <path d="M269.503,44.207 L269.503,44.207 C269.927,43.441 270.835,43.197 271.531,43.661 L274.052,45.341 C274.748,45.806 274.968,46.802 274.544,47.568 L274.544,47.568 C274.120,48.334 273.212,48.578 272.516,48.114 L269.996,46.433 C269.300,45.969 269.079,44.972 269.503,44.207 Z" class="cls-1"/>\\r\\n                                         <path d="M267.143,53.051 L267.143,53.051 C267.162,52.156 267.838,51.445 268.653,51.465 L271.603,51.534 C272.418,51.553 273.063,52.294 273.044,53.189 L273.044,53.189 C273.025,54.084 272.349,54.794 271.534,54.775 L268.583,54.706 C267.768,54.687 267.123,53.946 267.143,53.051 Z" class="cls-1"/>\\r\\n                                         <path d="M269.325,61.995 L269.325,61.995 C268.987,61.279 269.329,60.321 270.087,59.855 L272.835,58.168 C273.593,57.702 274.482,57.905 274.820,58.621 L274.820,58.621 C275.158,59.337 274.817,60.295 274.058,60.761 L271.311,62.448 C270.552,62.913 269.663,62.711 269.325,61.995 Z" class="cls-1"/>\\r\\n                                         <path d="M275.198,68.019 L275.198,68.019 C274.447,67.587 274.208,66.661 274.663,65.951 L276.311,63.380 C276.766,62.670 277.743,62.445 278.494,62.878 L278.494,62.878 C279.245,63.310 279.484,64.236 279.029,64.946 L277.381,67.517 C276.926,68.227 275.949,68.452 275.198,68.019 Z" class="cls-1"/>\\r\\n                                         <path d="M283.870,70.427 L283.870,70.427 C282.992,70.407 282.296,69.718 282.314,68.887 L282.382,65.877 C282.401,65.046 283.128,64.388 284.005,64.408 L284.005,64.408 C284.883,64.428 285.579,65.117 285.561,65.948 L285.493,68.958 C285.474,69.789 284.747,70.447 283.870,70.427 Z" class="cls-1"/>\\r\\n                                         <path d="M292.265,68.397 L292.265,68.397 C291.550,68.740 290.594,68.394 290.128,67.625 L288.444,64.839 C287.979,64.070 288.182,63.168 288.896,62.826 L288.896,62.826 C289.611,62.483 290.568,62.829 291.033,63.598 L292.717,66.384 C293.182,67.153 292.980,68.055 292.265,68.397 Z" class="cls-1"/>\\r\\n                                         <path d="M298.279,62.442 L298.279,62.442 C297.848,63.204 296.923,63.447 296.214,62.985 L293.648,61.314 C292.939,60.853 292.715,59.862 293.146,59.101 L293.146,59.101 C293.578,58.340 294.503,58.097 295.212,58.558 L297.778,60.229 C298.487,60.690 298.711,61.681 298.279,62.442 Z" class="cls-1"/>\\r\\n                                         <path d="M300.683,53.650 L300.683,53.650 C300.664,54.540 299.975,55.246 299.145,55.227 L296.141,55.158 C295.311,55.139 294.655,54.402 294.674,53.513 L294.674,53.513 C294.694,52.623 295.382,51.917 296.212,51.936 L299.216,52.005 C300.046,52.024 300.703,52.760 300.683,53.650 Z" class="cls-1"/>\\r\\n                                         <path d="M298.240,44.425 L298.240,44.425 C298.582,45.161 298.273,46.164 297.552,46.666 L294.938,48.483 C294.216,48.985 293.354,48.795 293.012,48.058 L293.012,48.058 C292.671,47.322 292.979,46.319 293.701,45.817 L296.315,44.000 C297.037,43.498 297.899,43.688 298.240,44.425 Z" class="cls-1"/>\\r\\n                                         <path d="M292.443,38.301 L292.443,38.301 C293.177,38.733 293.428,39.689 293.005,40.438 L291.471,43.147 C291.047,43.896 290.109,44.152 289.375,43.720 L289.375,43.720 C288.642,43.288 288.390,42.331 288.814,41.583 L290.348,38.873 C290.771,38.125 291.709,37.869 292.443,38.301 Z" class="cls-1"/>\\r\\n                                         <path d="M284.136,36.000 L284.136,36.000 C283.285,36.019 282.609,36.704 282.628,37.529 L282.693,40.516 C282.712,41.341 283.416,41.994 284.267,41.974 L284.267,41.974 C285.118,41.955 285.794,41.270 285.775,40.445 L285.710,37.458 C285.691,36.633 284.987,35.980 284.136,36.000 Z" class="cls-1"/>\\r\\n                                      </g>\\r\\n                                    </g>\\r\\n                                </svg>\\r\\n\\t\\t\\t\\t\\t\\t\\t</div>\\r\\n\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t<a href="#signup">\\r\\n\\t\\t\\t\\t\\t\\t<li class="right callToAction OrangeButton">Registrarse</li>\\r\\n\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t<a href="#login">\\r\\n\\t\\t\\t\\t\\t\\t<li class="right softUnderline size18">Iniciar Sesi\\xc3\\xb3n</li>\\r\\n\\t\\t\\t\\t\\t</a>\\r\\n                    <a href="\', escape=False)\nresponse.write(URL(\'newcourses\'))\nresponse.write(\'">\\r\\n                        <li class="right size18">Crear Curso</li>\\r\\n                    </a>\\r\\n\\t\\t\\t\\t</ul>\\r\\n\\t\\t\\t</nav>\\r\\n\\t\\t</header>\\r\\n\\t\\t<main>\\r\\n\\t\\t\\t<span class="space50 block"></span>\\r\\n\\t\\t\\t<section id="first">\\r\\n\\t\\t\\t\\t<article id="block1" class="centered960px">\\r\\n\\t\\t\\t\\t\\t<span class="space20 block"></span>\\r\\n\\t\\t\\t\\t\\t<h1 class="lightHighlight size40 title">\\xc2\\xa1Aprende a dise\\xc3\\xb1ar sitios web de una forma f\\xc3\\xa1cil e intuitiva!</h1>\\r\\n\\t\\t\\t\\t\\t<span class="space10 block"></span>\\r\\n\\t\\t\\t\\t\\t<h3 class="lightHighlight size22 subtitle">Aprender\\xc3\\xa1s:</h3>\\r\\n\\t\\t\\t\\t\\t<span class="space0 block"></span>\\r\\n\\t\\t\\t\\t\\t<ul class="lightHighlight prettyBullet size20">\\r\\n\\t\\t\\t\\t\\t\\t<li><p>Aspectos b\\xc3\\xa1sicos de dise\\xc3\\xb1o</p></li>\\r\\n\\t\\t\\t\\t\\t\\t<li><p>Programaci\\xc3\\xb3n b\\xc3\\xa1sica</p></li>\\r\\n\\t\\t\\t\\t\\t\\t<li><p>Lenguajes para web: HTML, CSS y Javascript</p></li>\\r\\n\\t\\t\\t\\t\\t\\t<li><p>Las estrategias y herramientas para trabajar m\\xc3\\xa1s r\\xc3\\xa1pido y eficientemente</p></li>\\r\\n\\t\\t\\t\\t\\t</ul>\\r\\n\\r\\n\\t\\t\\t\\t\\t<span class="space10 block"></span>\\r\\n\\t\\t\\t\\t\\t<p class="lightHighlight size22 thin centerOnPage">Prueba sin cuenta o <a href="#signup"><span class="callToAction size24">Reg\\xc3\\xadstrate ya!</span></a></p>\\r\\n\\t\\t\\t\\t\\t<span class="space20 block"></span>\\r\\n\\t\\t\\t\\t\\t<span class="clearfix block"></span>\\r\\n\\t\\t\\t\\t</article>\\r\\n\\t\\t\\t</section>\\r\\n\\t\\t\\t<div class="blankSpace"></div>\\r\\n\\t\\t\\t<section id="second">\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<!-- Second Section -->\\r\\n\\t\\t\\t\\t<article id="block2" class="centered960px">\\r\\n\\t\\t\\t\\t\\t<span class="space20 block"></span>\\r\\n\\t\\t\\t\\t\\t<h1 class="size30 title">Sigue el camino o aventurate sin orden</h1>\\r\\n\\t\\t\\t\\t\\t<h3 class="size26 subtitle">Aprende lo que quieras en el orden que elijas</h3>\\r\\n\\t\\t\\t\\t\\t<span class="space20 block"></span>\\r\\n\\t\\t\\t\\t\\t<ul><!--  \\r\\n\\t\\t\\t\\t\\t\\t--><li>\\r\\n\\t\\t\\t\\t\\t\\t\\t<a href="course.html">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<img src="" alt="" class="courseImg">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<p class="size18">Curso 1</p>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<!-- <p class="size14">23 lecciones</p> -->\\r\\n\\t\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t</li><!--\\r\\n\\t\\t\\t\\t\\t\\t--><li>\\r\\n\\t\\t\\t\\t\\t\\t\\t<a>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<img src="#" alt="" class="courseImg soon">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<p class="size18">Curso 2</p>\\r\\n\\t\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t</li><!--\\r\\n\\t\\t\\t\\t\\t\\t--><li>\\r\\n\\t\\t\\t\\t\\t\\t\\t<a>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<img src="#" alt="" class="courseImg soon">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<p class="size18">Curso 3</p>\\r\\n\\t\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t</li><!--\\r\\n\\t\\t\\t\\t\\t\\t--><li>\\r\\n\\t\\t\\t\\t\\t\\t\\t<a>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<img src="#" alt="" class="courseImg soon">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<p class="size18">Curso 4</p>\\r\\n\\t\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t</li><!--\\r\\n\\t\\t\\t\\t\\t--></ul>\\r\\n\\t\\t\\t\\t</article>\\r\\n\\t\\t\\t</section>\\r\\n\\t\\t\\t<div class="blankSpace"></div>\\r\\n\\t\\t\\t<section id="third">\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<!-- Third Section -->\\r\\n\\t\\t\\t\\t<article id="block3" class="centered960px">\\r\\n\\t\\t\\t\\t\\t<span class="space20 block"></span>\\r\\n\\t\\t\\t\\t\\t<h1 class="size30 title">Qu\\xc3\\xa9 es fizcode?</h1>\\r\\n\\t\\t\\t\\t\\t<h3 class="size26 subtitle">Sobre Nosotros...</h3>\\r\\n\\t\\t\\t\\t\\t<span class="space20 block"></span>\\r\\n\\t\\t\\t\\t</article>\\r\\n\\t\\t\\t</article>\\r\\n\\t\\t\\t<div class="blankSpace"></div>\\r\\n\\t\\t</main>\\r\\n\\r\\n\\t\\t<footer>\\r\\n\\t\\t\\t<div class="centered960px">\\r\\n\\t\\t\\t\\t<div class="clearFix">\\r\\n\\t\\t\\t\\t\\t<ul class="size14">\\r\\n\\t\\t\\t\\t\\t\\t<a href="">\\r\\n\\t\\t\\t\\t\\t\\t\\t<li class="strong">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\tFizcode\\r\\n\\t\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t<a href="">\\r\\n\\t\\t\\t\\t\\t\\t\\t<li>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t&copy; Copyright 2015\\r\\n\\t\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t<a href="">\\r\\n\\t\\t\\t\\t\\t\\t\\t<li>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\tAviso Legal\\r\\n\\t\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t<a href="">\\r\\n\\t\\t\\t\\t\\t\\t\\t<li>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\tContacto\\r\\n\\t\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t<a href="">\\r\\n\\t\\t\\t\\t\\t\\t\\t<li>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\tBlog\\r\\n\\t\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t</ul>\\r\\n\\t\\t\\t\\t</div>\\r\\n\\t\\t\\t</div>\\r\\n\\t\\t</footer>\\r\\n\\t\\t<div id="login" class="modal">\\r\\n\\t\\t\\t<div>\\r\\n\\t\\t\\t\\t<a href="#" class="closeModal">&times;</a>\\r\\n\\t\\t\\t\\t<form>\\r\\n\\t\\t\\t\\t\\t<fieldset>\\r\\n\\t\\t\\t\\t\\t\\t<h4 class="size24 regular">Bienvenido de vuelta!</h4>\\r\\n\\t\\t\\t\\t\\t\\t<span class="space10 block"></span>\\r\\n\\t\\t\\t\\t\\t\\t<!-- <label for="email" class="size20 thin">Correo electr\\xc3\\xb3nico o usuario:</label> -->\\r\\n\\t\\t\\t\\t\\t\\t<input type="email" id="email" name="usrEmail" required class="size20" placeholder="Correo electr\\xc3\\xb3nico o usuario">\\r\\n\\t\\t\\t\\t\\t\\t<!-- <label for="password" class="size20 thin">Contrase\\xc3\\xb1a:</label> -->\\r\\n\\t\\t\\t\\t\\t\\t<input type="password" id="password" name="usrPassword" required class="size20" placeholder="Contrase\\xc3\\xb1a">\\r\\n\\t\\t\\t\\t\\t</fieldset>\\r\\n\\t\\t\\t\\t\\t<label class="rememberLabel thin size18 left"><input type="checkbox" name="remember" value="Yes" class="rememberInput">Remember me</label>\\r\\n\\t\\t\\t\\t\\t<button type="submit" class="size20 thin OrangeBG right">Iniciar sesi\\xc3\\xb3n</button>\\r\\n\\t\\t\\t\\t\\t<a href="" class="thin size14 forgotPassword left">\\xc2\\xbfOlvidaste tu contrase\\xc3\\xb1a?</a>\\r\\n\\t\\t\\t\\t</form>\\r\\n\\t\\t\\t\\t<span class="clearFix space10 block"></span>\\r\\n\\t\\t\\t\\t<span class="separator"></span>\\r\\n\\t\\t\\t\\t<div>\\r\\n\\t\\t\\t\\t\\t<h4 class="size24 regular">Con\\xc3\\xa9ctate con alguna red social</h4>\\r\\n\\t\\t\\t\\t\\t<span class="space10 block"></span>\\r\\n\\t\\t\\t\\t\\t<ul class="socialConnect">\\r\\n\\t\\t\\t\\t\\t\\t<a href="">\\r\\n\\t\\t\\t\\t\\t\\t\\t<li class="FbBG size24">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="65" height="65" viewBox="0 0 512 512">\\r\\n  <defs>\\r\\n    <style>\\r\\n      .FBL-1 {\\r\\n        fill: #fff;\\r\\n        fill-rule: evenodd;\\r\\n      }\\r\\n    </style>\\r\\n  </defs>\\r\\n  <path d="M353.488,512.010 L353.488,313.498 L419.825,313.498 L429.789,236.485 L353.488,236.485 L353.488,187.115 C353.488,164.740 359.482,149.493 391.566,149.493 L432.485,149.506 L432.485,80.357 C425.405,79.416 401.117,77.500 372.859,77.500 C313.862,77.500 273.504,113.325 273.504,179.463 L273.504,236.485 L206.497,236.485 L206.497,313.498 L273.488,313.498 L273.488,512.010 L353.488,512.010 Z" class="FBL-1"/>\\r\\n</svg>\\r\\n                                <p>Facebook</p>\\r\\n\\t\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t<!-- <a href=""><li class="TwBG size24"><p>Twitter</p></li></a> -->\\r\\n\\t\\t\\t\\t\\t\\t<a href="">\\r\\n\\t\\t\\t\\t\\t\\t\\t<li class="GsigninBG size24">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="65" height="65" viewBox="0 0 512 512">\\r\\n  <defs>\\r\\n    <style>\\r\\n      .GSL-1 {\\r\\n        fill: #fff;\\r\\n        fill-rule: evenodd;\\r\\n      }\\r\\n    </style>\\r\\n  </defs>\\r\\n  <path d="M319.200,71.314 C322.547,73.404 326.314,76.455 330.498,80.462 C334.513,84.645 338.451,89.786 342.302,95.886 C345.984,101.636 349.246,108.431 352.094,116.272 C354.435,124.115 355.610,133.263 355.610,143.720 C355.292,162.891 351.083,178.224 342.981,189.724 C339.007,195.304 334.797,200.441 330.352,205.148 C325.428,209.853 320.187,214.647 314.628,219.525 C311.450,222.837 308.514,226.580 305.815,230.763 C302.639,235.121 301.049,240.175 301.049,245.926 C301.049,251.503 302.678,256.119 305.937,259.778 C308.704,263.268 311.393,266.314 314.003,268.929 L332.087,283.827 C343.327,293.066 353.184,303.255 361.656,314.409 C369.640,325.737 373.797,340.550 374.122,358.848 C374.122,384.810 362.716,407.813 339.905,427.854 C316.249,448.592 282.114,459.309 237.509,460.008 C200.168,459.656 172.286,451.655 153.872,436.003 C135.287,421.389 125.990,403.910 125.990,383.561 C125.990,373.644 129.013,362.601 135.059,350.425 C140.926,338.247 151.548,327.549 166.922,318.336 C184.191,308.419 202.330,301.811 221.329,298.507 C240.150,295.720 255.780,294.159 268.218,293.810 C264.375,288.729 260.949,283.297 257.942,277.513 C254.432,271.909 252.680,265.161 252.680,257.274 C252.680,252.547 253.346,248.600 254.684,245.448 C255.854,242.118 256.939,239.055 257.942,236.254 C251.884,236.952 246.175,237.299 240.813,237.299 C212.434,236.952 190.802,227.979 175.924,210.379 C160.349,194.001 152.563,174.924 152.563,153.143 C152.563,126.831 163.596,102.964 185.662,81.528 C200.819,68.986 216.567,60.796 232.905,56.960 C249.076,53.654 264.236,51.995 278.385,51.995 L385.002,51.995 L352.074,71.314 L319.200,71.314 ZM339.795,379.795 C339.795,366.200 335.379,354.346 326.554,344.242 C317.217,334.652 302.622,322.890 282.760,308.945 C279.364,308.594 275.377,308.424 270.795,308.424 C268.076,308.072 261.117,308.424 249.914,309.469 C238.877,311.036 227.591,313.561 216.051,317.048 C213.332,318.095 209.513,319.662 204.593,321.757 C199.668,324.020 194.663,327.247 189.571,331.429 C184.646,335.782 180.490,341.188 177.093,347.638 C173.188,354.436 171.238,362.626 171.238,372.214 C171.238,391.036 179.721,406.547 196.698,418.752 C212.824,430.951 234.892,437.225 262.900,437.576 C288.023,437.225 307.204,431.649 320.443,420.843 C333.343,410.207 339.795,396.524 339.795,379.795 ZM265.464,222.709 C279.498,222.187 291.192,217.122 300.549,207.515 C305.060,200.707 307.961,193.725 309.249,186.563 C310.021,179.408 310.411,173.384 310.411,168.492 C310.411,147.363 305.035,126.060 294.283,104.581 C289.242,94.279 282.607,85.898 274.374,79.437 C265.971,73.327 256.313,70.096 245.391,69.745 C230.943,70.096 218.927,75.946 209.354,87.295 C201.277,99.171 197.414,112.442 197.762,127.106 C197.762,146.488 203.402,166.661 214.690,187.613 C220.151,197.393 227.205,205.686 235.843,212.494 C244.481,219.309 254.355,222.709 265.464,222.709 Z" class="GSL-1"/>\\r\\n</svg>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<p>Google</p>\\r\\n\\t\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t</ul>\\r\\n\\t\\t\\t\\t</div>\\r\\n\\t\\t\\t</div>\\r\\n\\t\\t</div>\\r\\n\\t\\t<div id="signup" class="modal">\\r\\n\\t\\t\\t<div>\\r\\n\\t\\t\\t\\t<a href="#" class="closeModal">&times;</a>\\r\\n\\t\\t\\t\\t<form>\\r\\n\\t\\t\\t\\t\\t<fieldset class="size20">\\r\\n\\t\\t\\t\\t\\t\\t<h4 class="size24 regular">\\xc3\\x9anete a nosotros!</h4>\\r\\n\\t\\t\\t\\t\\t\\t\', escape=False)\nresponse.write(udata.custom.begin)\nresponse.write(\'\\r\\n\\t\\t\\t\\t\\t\\t<span class="space10 block"></span>\\r\\n\\t\\t\\t\\t\\t\\t<!-- <label for="email" class="thin">Usuario:</label> -->\\r\\n\\t\\t\\t\\t\\t\\t<div id="username">\', escape=False)\nresponse.write(udata.custom.widget.first_name)\nresponse.write(\'</div>\\r\\n\\t\\t\\t\\t\\t\\t<!-- <label for="email" class="thin">Correo electr\\xc3\\xb3nico:</label> -->\\r\\n\\t\\t\\t\\t\\t\\t<div id="email">\', escape=False)\nresponse.write(udata.custom.widget.email)\nresponse.write(\'</div>\\r\\n\\t\\t\\t\\t\\t\\t<!-- <label for="password" class="thin">Contrase\\xc3\\xb1a:</label> -->\\r\\n\\t\\t\\t\\t\\t\\t<div id="password">\', escape=False)\nresponse.write(udata.custom.widget.password)\nresponse.write(\'</div>\\r\\n\\t\\t\\t\\t\\t\\t<!-- <label for="password" class="thin">Confirmar Contrase\\xc3\\xb1a:</label> -->\\r\\n\\t\\t\\t\\t\\t\\t<input type="password" id="passwordConfirm" name="usrPasswordConfrm" required placeholder="Confirmar Contrase\\xc3\\xb1a">\\r\\n\\t\\t\\t\\t\\t\\t<div class="thin OrangeBG">\', escape=False)\nresponse.write(udata.custom.submit)\nresponse.write(\'</div>\\r\\n\\t\\t\\t\\t\\t\\t\', escape=False)\nresponse.write(udata.custom.end)\nresponse.write(\'\\r\\n\\t\\t\\t\\t\\t</fieldset>\\r\\n\\r\\n\\t\\t\\t\\t\\t<!-- <label class="rememberLabel thin size18 left"><input type="checkbox" name="remember" value="Yes" class="rememberInput">Remember me</label> -->\\r\\n\\t\\t\\t\\t\\t<button type="submit" class="size20 thin OrangeBG right">Reg\\xc3\\xadstrame!</button>\\r\\n\\t\\t\\t\\t</form>\\r\\n\\t\\t\\t\\t<span class="clearFix space10 block"></span>\\r\\n\\t\\t\\t\\t<span class="separator"></span>\\r\\n\\t\\t\\t\\t<div>\\r\\n\\t\\t\\t\\t\\t<h4 class="size24 regular">Con\\xc3\\xa9ctate m\\xc3\\xa1s facilmente</h4>\\r\\n\\t\\t\\t\\t\\t<span class="space10 block"></span>\\r\\n\\t\\t\\t\\t\\t<ul class="socialConnect">\\r\\n\\t\\t\\t\\t\\t\\t<a href="">\\r\\n\\t\\t\\t\\t\\t\\t\\t<li class="FbBG size24">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="65" height="65" viewBox="0 0 512 512">\\r\\n  <defs>\\r\\n    <style>\\r\\n      .FBL-1 {\\r\\n        fill: #fff;\\r\\n        fill-rule: evenodd;\\r\\n      }\\r\\n    </style>\\r\\n  </defs>\\r\\n  <path d="M353.488,512.010 L353.488,313.498 L419.825,313.498 L429.789,236.485 L353.488,236.485 L353.488,187.115 C353.488,164.740 359.482,149.493 391.566,149.493 L432.485,149.506 L432.485,80.357 C425.405,79.416 401.117,77.500 372.859,77.500 C313.862,77.500 273.504,113.325 273.504,179.463 L273.504,236.485 L206.497,236.485 L206.497,313.498 L273.488,313.498 L273.488,512.010 L353.488,512.010 Z" class="FBL-1"/>\\r\\n</svg>\\r\\n                                <p>Facebook</p>\\r\\n\\t\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t<!-- <a href=""><li class="TwBG size24"><p>Twitter</p></li></a> -->\\r\\n\\t\\t\\t\\t\\t\\t<a href="">\\r\\n\\t\\t\\t\\t\\t\\t\\t<li class="GsigninBG size24">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="65" height="65" viewBox="0 0 512 512">\\r\\n  <defs>\\r\\n    <style>\\r\\n      .GSL-1 {\\r\\n        fill: #fff;\\r\\n        fill-rule: evenodd;\\r\\n      }\\r\\n    </style>\\r\\n  </defs>\\r\\n  <path d="M319.200,71.314 C322.547,73.404 326.314,76.455 330.498,80.462 C334.513,84.645 338.451,89.786 342.302,95.886 C345.984,101.636 349.246,108.431 352.094,116.272 C354.435,124.115 355.610,133.263 355.610,143.720 C355.292,162.891 351.083,178.224 342.981,189.724 C339.007,195.304 334.797,200.441 330.352,205.148 C325.428,209.853 320.187,214.647 314.628,219.525 C311.450,222.837 308.514,226.580 305.815,230.763 C302.639,235.121 301.049,240.175 301.049,245.926 C301.049,251.503 302.678,256.119 305.937,259.778 C308.704,263.268 311.393,266.314 314.003,268.929 L332.087,283.827 C343.327,293.066 353.184,303.255 361.656,314.409 C369.640,325.737 373.797,340.550 374.122,358.848 C374.122,384.810 362.716,407.813 339.905,427.854 C316.249,448.592 282.114,459.309 237.509,460.008 C200.168,459.656 172.286,451.655 153.872,436.003 C135.287,421.389 125.990,403.910 125.990,383.561 C125.990,373.644 129.013,362.601 135.059,350.425 C140.926,338.247 151.548,327.549 166.922,318.336 C184.191,308.419 202.330,301.811 221.329,298.507 C240.150,295.720 255.780,294.159 268.218,293.810 C264.375,288.729 260.949,283.297 257.942,277.513 C254.432,271.909 252.680,265.161 252.680,257.274 C252.680,252.547 253.346,248.600 254.684,245.448 C255.854,242.118 256.939,239.055 257.942,236.254 C251.884,236.952 246.175,237.299 240.813,237.299 C212.434,236.952 190.802,227.979 175.924,210.379 C160.349,194.001 152.563,174.924 152.563,153.143 C152.563,126.831 163.596,102.964 185.662,81.528 C200.819,68.986 216.567,60.796 232.905,56.960 C249.076,53.654 264.236,51.995 278.385,51.995 L385.002,51.995 L352.074,71.314 L319.200,71.314 ZM339.795,379.795 C339.795,366.200 335.379,354.346 326.554,344.242 C317.217,334.652 302.622,322.890 282.760,308.945 C279.364,308.594 275.377,308.424 270.795,308.424 C268.076,308.072 261.117,308.424 249.914,309.469 C238.877,311.036 227.591,313.561 216.051,317.048 C213.332,318.095 209.513,319.662 204.593,321.757 C199.668,324.020 194.663,327.247 189.571,331.429 C184.646,335.782 180.490,341.188 177.093,347.638 C173.188,354.436 171.238,362.626 171.238,372.214 C171.238,391.036 179.721,406.547 196.698,418.752 C212.824,430.951 234.892,437.225 262.900,437.576 C288.023,437.225 307.204,431.649 320.443,420.843 C333.343,410.207 339.795,396.524 339.795,379.795 ZM265.464,222.709 C279.498,222.187 291.192,217.122 300.549,207.515 C305.060,200.707 307.961,193.725 309.249,186.563 C310.021,179.408 310.411,173.384 310.411,168.492 C310.411,147.363 305.035,126.060 294.283,104.581 C289.242,94.279 282.607,85.898 274.374,79.437 C265.971,73.327 256.313,70.096 245.391,69.745 C230.943,70.096 218.927,75.946 209.354,87.295 C201.277,99.171 197.414,112.442 197.762,127.106 C197.762,146.488 203.402,166.661 214.690,187.613 C220.151,197.393 227.205,205.686 235.843,212.494 C244.481,219.309 254.355,222.709 265.464,222.709 Z" class="GSL-1"/>\\r\\n</svg>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<p>Google</p>\\r\\n\\t\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t</ul>\\r\\n\\t\\t\\t\\t</div>\\r\\n\\t\\t\\t</div>\\r\\n\\t\\t</div>\\r\\n\\t</body>\\r\\n</html>\\r\\n\', escape=False)\nresponse.write(\'\\r\\n        \', escape=False)\nresponse.write(\'\\r\\n      </div>\\r\\n  </body>\\r\\n</html>\\r\\n\', escape=False)'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__hash__'
+p12
+S"<method-wrapper '__hash__' of exceptions.NameError object>"
+p13
+sS'__setattr__'
+p14
+S"<method-wrapper '__setattr__' of exceptions.NameError object>"
+p15
+sS'__reduce_ex__'
+p16
+S'<built-in method __reduce_ex__ of exceptions.NameError object>'
+p17
+sS'__getslice__'
+p18
+S"<method-wrapper '__getslice__' of exceptions.NameError object>"
+p19
+sS'__getitem__'
+p20
+S"<method-wrapper '__getitem__' of exceptions.NameError object>"
+p21
+sS'__setstate__'
+p22
+S'<built-in method __setstate__ of exceptions.NameError object>'
+p23
+sS'__reduce__'
+p24
+S'<built-in method __reduce__ of exceptions.NameError object>'
+p25
+sS'__str__'
+p26
+S"<method-wrapper '__str__' of exceptions.NameError object>"
+p27
+sS'__format__'
+p28
+S'<built-in method __format__ of exceptions.NameError object>'
+p29
+sS'__getattribute__'
+p30
+S"<method-wrapper '__getattribute__' of exceptions.NameError object>"
+p31
+sS'__class__'
+p32
+S"<type 'exceptions.NameError'>"
+p33
+sS'__unicode__'
+p34
+S'<built-in method __unicode__ of exceptions.NameError object>'
+p35
+sS'__delattr__'
+p36
+S"<method-wrapper '__delattr__' of exceptions.NameError object>"
+p37
+sS'__subclasshook__'
+p38
+S'<built-in method __subclasshook__ of type object>'
+p39
+sS'__repr__'
+p40
+S"<method-wrapper '__repr__' of exceptions.NameError object>"
+p41
+sS'args'
+p42
+S'("name \'udata\' is not defined",)'
+p43
+sS'__dict__'
+p44
+S'{}'
+p45
+sS'__sizeof__'
+p46
+S'<built-in method __sizeof__ of exceptions.NameError object>'
+p47
+sS'__doc__'
+p48
+S"'Name not found globally.'"
+p49
+sS'__init__'
+p50
+S"<method-wrapper '__init__' of exceptions.NameError object>"
+p51
+sS'__new__'
+p52
+S'<built-in method __new__ of type object>'
+p53
+ssS'evalue'
+p54
+S"name 'udata' is not defined"
+p55
+sS'request'
+p56
+cgluon.html
+XML_unpickle
+p57
+(S's\xea]\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>fizcode</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>default</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_admin</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-f1289137-4b44-4d79-9724-a08b50692e91<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_fizcode</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-9167d1f7-95f4-46b0-9d4c-094981fafaeb<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_welcome</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-1ff7e540-3508-4d55-9238-530e42e1e98e<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>text/html, application/xhtml+xml, image/jxr, */*</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>es-MX,es;q=0.5</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>Keep-Alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>session_id_welcome=127.0.0.1-1ff7e540-3508-4d55-9238-530e42e1e98e; session_id_admin=127.0.0.1-f1289137-4b44-4d79-9724-a08b50692e91; session_id_fizcode=127.0.0.1-9167d1f7-95f4-46b0-9d4c-094981fafaeb</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10240</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/fizcode/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>61065</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>Max</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_SOFTWARE</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;C:\\\\Users\\\\maxse_000\\\\Downloads\\\\Installers_Setups\\\\web2py_win\\\\web2py\\\\applications\\\\welcome\\\\&#x27;, &#x27;C:\\\\Users\\\\maxse_000\\\\Downloads\\\\Installers_Setups\\\\web2py_win\\\\web2py\\\\applications\\\\admin\\\\&#x27;, &#x27;C:\\\\Users\\\\maxse_000\\\\Downloads\\\\Installers_Setups\\\\web2py_win\\\\web2py\\\\applications\\\\fizcode\\\\&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\maxse_000\\Downloads\\Installers_Setups\\web2py_win\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x23d5dc8: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;2001:0:9d38:6ab8:1407:39ea:3f57:fe70&#x27;, &#x27;fe80::1407:39ea:3f57:fe70%2&#x27;, &#x27;fe80::4014:2e8e:eb72:f0f8%12&#x27;, &#x27;192.168.1.143&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;scheduler_groups&#x27;: None, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;Max&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;C:\\\\Users\\\\maxse_000\\\\Downloads\\\\Installers_Setups\\\\web2py_win\\\\web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\maxse_000\\Downloads\\Installers_Setups\\web2py_win\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>text/html, application/xhtml+xml, image/jxr, */*</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>es-MX,es;q=0.5</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>Keep-Alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>session_id_welcome=127.0.0.1-1ff7e540-3508-4d55-9238-530e42e1e98e; session_id_admin=127.0.0.1-f1289137-4b44-4d79-9724-a08b50692e91; session_id_fizcode=127.0.0.1-9167d1f7-95f4-46b0-9d4c-094981fafaeb</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10240</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>fe80::1407:39ea:3f57:fe70%2</div></td></tr><tr><td><div>fe80::4014:2e8e:eb72:f0f8%12</div></td></tr><tr><td><div>Max</div></td></tr><tr><td><div>2001:0:9d38:6ab8:1407:39ea:3f57:fe70</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>192.168.1.143</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/fizcode/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>61065</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/fizcode/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>Max</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_software</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\maxse_000\\Downloads\\Installers_Setups\\web2py_win\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.11.2-stable+timestamp.2015.05.30.16.33.24</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x0205D0D0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x023EDD18&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x07DDA9F0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x0205D0D0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x023EDD18&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x07DDA9F0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\maxse_000\\Downloads\\Installers_Setups\\web2py_win\\web2py\\applications\\fizcode\\</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;C:\\\\Users\\\\maxse_000\\\\Downloads\\\\Installers_Setups\\\\web2py_win\\\\web2py\\\\applications\\\\welcome\\\\&#x27;, &#x27;C:\\\\Users\\\\maxse_000\\\\Downloads\\\\Installers_Setups\\\\web2py_win\\\\web2py\\\\applications\\\\admin\\\\&#x27;, &#x27;C:\\\\Users\\\\maxse_000\\\\Downloads\\\\Installers_Setups\\\\web2py_win\\\\web2py\\\\applications\\\\fizcode\\\\&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\maxse_000\\Downloads\\Installers_Setups\\web2py_win\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x23d5dc8: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;2001:0:9d38:6ab8:1407:39ea:3f57:fe70&#x27;, &#x27;fe80::1407:39ea:3f57:fe70%2&#x27;, &#x27;fe80::4014:2e8e:eb72:f0f8%12&#x27;, &#x27;192.168.1.143&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;scheduler_groups&#x27;: None, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;Max&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;C:\\\\Users\\\\maxse_000\\\\Downloads\\\\Installers_Setups\\\\web2py_win\\\\web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\maxse_000\\Downloads\\Installers_Setups\\web2py_win\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>fe80::1407:39ea:3f57:fe70%2</div></td></tr><tr><td><div>fe80::4014:2e8e:eb72:f0f8%12</div></td></tr><tr><td><div>Max</div></td></tr><tr><td><div>2001:0:9d38:6ab8:1407:39ea:3f57:fe70</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>192.168.1.143</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.11.2-stable+timestamp.2015.05.30.16.33.24</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_sheduler</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_shell</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2015, 8, 4, 13, 35, 24, 891000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/fizcode/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2015, 8, 4, 18, 35, 24, 891000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x07D3CC50&gt;</div></td></tr></table></div>'
+tRp58
+sS'frames'
+p59
+(lp60
+(dp61
+S'file'
+p62
+S'C:\\Users\\maxse_000\\Downloads\\Installers_Setups\\web2py_win\\web2py\\gluon\\restricted.py'
+p63
+sS'dump'
+p64
+(dp65
+S'environment'
+p66
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'ASSIGNJS': <function ASSIGNJS>, 'AppConfig': <function AppConfig>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, ...}"
+p67
+sS'ccode'
+p68
+S'<code object <module> at 082D1380, file "C:\\User...ations\\fizcode\\views\\default/index.html", line 1>'
+p69
+ssS'lnum'
+p70
+I227
+sS'lines'
+p71
+(dp72
+I224
+S'            ccode = code'
+p73
+sI225
+S'        else:'
+p74
+sI226
+S'            ccode = compile2(code, layer)'
+p75
+sI227
+S'        exec ccode in environment'
+p76
+sI228
+S'    except HTTP:'
+p77
+sI229
+S'        raise'
+p78
+sI230
+S'    except RestrictedError:'
+p79
+sI231
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p80
+sI222
+S'    try:'
+p81
+sI223
+S'        if isinstance(code, types.CodeType):'
+p82
+ssS'call'
+p83
+S'(code=\'response.write(\\\'<!DOCTYPE html>\\\\r\\\\n<html lang="\\\'.../div>\\\\r\\\\n  </body>\\\\r\\\\n</html>\\\\r\\\\n\\\', escape=False)\', environment={\'A\': <class \'gluon.html.A\'>, \'ANY_OF\': <class \'gluon.validators.ANY_OF\'>, \'ASSIGNJS\': <function ASSIGNJS>, \'AppConfig\': <function AppConfig>, \'Auth\': <class \'gluon.tools.Auth\'>, \'B\': <class \'gluon.html.B\'>, \'BEAUTIFY\': <class \'gluon.html.BEAUTIFY\'>, \'BODY\': <class \'gluon.html.BODY\'>, \'BR\': <class \'gluon.html.BR\'>, \'BUTTON\': <class \'gluon.html.BUTTON\'>, ...}, layer=r\'C:\\Users\\maxse_000\\Downloads\\Installers_Setups\\w...2py\\applications\\fizcode\\views\\default/index.html\')'
+p84
+sS'func'
+p85
+S'restricted'
+p86
+sa(dp87
+g62
+S'C:\\Users\\maxse_000\\Downloads\\Installers_Setups\\web2py_win\\web2py\\applications\\fizcode\\views\\default\\index.html'
+p88
+sg64
+(dp89
+S'a'
+S'undefined'
+p90
+ssg70
+I64
+sg71
+(dp91
+I64
+S'response.write(udata.custom.begin)'
+p92
+sI65
+S'response.write(\'\\r\\n\\t\\t\\t\\t\\t\\t<span class="space10 block"></span>\\r\\n\\t\\t\\t\\t\\t\\t<!-- <label for="email" class="thin">Usuario:</label> -->\\r\\n\\t\\t\\t\\t\\t\\t<div id="username">\', escape=False)'
+p93
+sI66
+S'response.write(udata.custom.widget.first_name)'
+p94
+sI67
+S'response.write(\'</div>\\r\\n\\t\\t\\t\\t\\t\\t<!-- <label for="email" class="thin">Correo electr\\xc3\\xb3nico:</label> -->\\r\\n\\t\\t\\t\\t\\t\\t<div id="email">\', escape=False)'
+p95
+sI68
+S'response.write(udata.custom.widget.email)'
+p96
+sI69
+S'response.write(\'</div>\\r\\n\\t\\t\\t\\t\\t\\t<!-- <label for="password" class="thin">Contrase\\xc3\\xb1a:</label> -->\\r\\n\\t\\t\\t\\t\\t\\t<div id="password">\', escape=False)'
+p97
+sI70
+S'response.write(udata.custom.widget.password)'
+p98
+sI71
+S'response.write(\'</div>\\r\\n\\t\\t\\t\\t\\t\\t<!-- <label for="password" class="thin">Confirmar Contrase\\xc3\\xb1a:</label> -->\\r\\n\\t\\t\\t\\t\\t\\t<input type="password" id="passwordConfirm" name="usrPasswordConfrm" required placeholder="Confirmar Contrase\\xc3\\xb1a">\\r\\n\\t\\t\\t\\t\\t\\t<div class="thin OrangeBG">\', escape=False)'
+p99
+sI72
+S'response.write(udata.custom.submit)'
+p100
+sI73
+S"response.write('</div>\\r\\n\\t\\t\\t\\t\\t\\t', escape=False)"
+p101
+sI74
+S'response.write(udata.custom.end)'
+p102
+sI55
+S"response.files.insert(3,URL('static','js/web2py.js'))"
+p103
+sI56
+S'response.include_meta()'
+p104
+sI57
+S'response.include_files()'
+p105
+sI58
+S"response.write('\\n', escape=False)"
+p106
+sI59
+S'response.write(\'\\r\\n\\t\\t<link href=\\\'http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic\\\' rel=\\\'stylesheet\\\' type=\\\'text/css\\\'>\\r\\n\\t\\t<link rel="shortcut icon" href="\', escape=False)'
+p107
+sI60
+S"response.write(URL('static','images/FizcodeIcon.ico'))"
+p108
+sI61
+S'response.write(\'">\\r\\n\\t\\t<title>Fizcode</title>\\r\\n\\t</head>\\r\\n\\t<body>\\r\\n\\t\\t<header>\\r\\n\\t\\t\\t<nav class="centered960px size20">\\r\\n\\t\\t\\t\\t<ul>\\r\\n\\t\\t\\t\\t\\t<a href="index.html">\\r\\n\\t\\t\\t\\t\\t\\t<li class="left">\\r\\n                            <div class="logo">\\r\\n                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="335.25" height="128" viewBox="0 0 1341 512">\\r\\n                                    <defs>\\r\\n                                        <style>\\r\\n                                            .cls-1, .cls-2 {\\r\\n                                                fill: #fff;\\r\\n                                             }\\r\\n                                             .cls-1{\\r\\n                                                fill-rule: evenodd;\\r\\n                                             }\\r\\n                                        </style>\\r\\n                                     </defs>\\r\\n                                     <path d="M1267.356,268.471 C1263.594,276.185 1256.697,283.136 1246.664,289.319 C1236.632,295.505 1222.837,300.890 1205.280,305.476 C1187.724,310.063 1165.151,313.747 1137.561,316.525 C1137.421,318.056 1137.352,319.548 1137.352,321.008 C1137.352,322.467 1137.352,323.962 1137.352,325.490 C1137.352,344.116 1141.428,358.325 1149.579,368.124 C1157.731,377.922 1170.026,382.822 1186.470,382.822 C1193.158,382.822 1199.115,382.128 1204.340,380.737 C1209.565,379.349 1214.232,377.646 1218.344,375.629 C1222.452,373.616 1226.077,371.391 1229.212,368.958 C1232.347,366.528 1235.237,364.303 1237.886,362.286 C1240.531,360.273 1242.971,358.570 1245.201,357.179 C1247.429,355.791 1249.659,355.094 1251.890,355.094 C1254.398,355.094 1256.697,356.276 1258.787,358.638 L1267.983,370.104 C1260.877,377.473 1253.944,383.760 1247.187,388.972 C1240.427,394.184 1233.497,398.529 1226.390,402.002 C1219.284,405.477 1211.864,408.015 1204.131,409.611 C1196.398,411.207 1188.070,412.009 1179.154,412.009 C1167.032,412.009 1156.163,409.992 1146.549,405.963 C1136.934,401.933 1128.783,396.200 1122.095,388.763 C1115.406,381.330 1110.250,372.329 1106.628,361.765 C1103.003,351.205 1101.194,339.390 1101.194,326.324 C1101.194,315.483 1102.343,304.678 1104.642,293.906 C1106.941,283.136 1110.286,272.885 1114.675,263.155 C1119.064,253.428 1124.426,244.392 1130.768,236.053 C1137.107,227.714 1144.354,220.521 1152.505,214.475 C1160.657,208.429 1169.644,203.670 1179.468,200.194 C1189.291,196.722 1199.846,194.982 1211.133,194.982 C1221.861,194.982 1231.126,196.514 1238.931,199.569 C1246.733,202.628 1253.144,206.520 1258.160,211.244 C1263.176,215.970 1266.902,221.182 1269.342,226.880 C1271.778,232.580 1273.000,238.001 1273.000,243.141 C1273.000,252.314 1271.118,260.757 1267.356,268.471 ZM1238.095,236.782 C1236.978,234.072 1235.202,231.606 1232.765,229.381 C1230.326,227.160 1227.155,225.316 1223.255,223.857 C1219.353,222.397 1214.614,221.668 1209.043,221.668 C1200.264,221.668 1192.181,223.476 1184.797,227.088 C1177.410,230.704 1170.862,235.672 1165.151,241.994 C1159.435,248.320 1154.560,255.754 1150.520,264.302 C1146.477,272.849 1143.342,282.058 1141.114,291.925 C1162.571,289.286 1179.781,286.263 1192.740,282.856 C1205.698,279.452 1215.659,275.768 1222.628,271.807 C1229.594,267.846 1234.192,263.572 1236.423,258.985 C1238.650,254.399 1239.767,249.604 1239.767,244.600 C1239.767,242.099 1239.209,239.493 1238.095,236.782 ZM1024.075,409.090 C1019.196,409.090 1015.888,407.839 1014.147,405.337 C1012.403,402.836 1011.534,399.780 1011.534,396.164 L1015.506,352.175 C1010.209,361.212 1004.428,369.411 998.158,376.776 C991.888,384.144 985.304,390.431 978.406,395.643 C971.509,400.855 964.331,404.888 956.878,407.735 C949.423,410.582 941.862,412.009 934.201,412.009 C916.086,412.009 902.046,405.442 892.085,392.307 C882.122,379.173 877.141,360.097 877.141,335.080 C877.141,323.685 878.323,312.287 880.694,300.890 C883.062,289.495 886.442,278.582 890.831,268.158 C895.221,257.735 900.514,248.040 906.716,239.076 C912.915,230.111 919.812,222.365 927.408,215.830 C935.001,209.299 943.257,204.156 952.176,200.403 C961.091,196.650 970.428,194.774 980.183,194.774 C990.493,194.774 999.934,196.790 1008.504,200.820 C1017.073,204.853 1024.353,210.618 1030.345,218.124 L1044.767,102.001 L1081.344,102.001 L1043.304,409.090 L1024.075,409.090 ZM1007.981,228.339 C1000.594,225.284 993.142,223.753 985.617,223.753 C974.608,223.753 964.680,227.020 955.833,233.551 C946.983,240.086 939.459,248.529 933.260,258.881 C927.059,269.237 922.287,280.807 918.943,293.593 C915.599,306.382 913.927,318.959 913.927,331.327 C913.927,347.869 916.922,360.482 922.914,369.166 C928.904,377.854 937.336,382.196 948.205,382.196 C954.893,382.196 961.614,380.147 968.374,376.046 C975.131,371.948 981.679,366.248 988.021,358.951 C994.360,351.654 1000.281,342.970 1005.787,332.891 C1011.290,322.816 1016.061,311.802 1020.104,299.847 L1027.001,243.975 C1021.704,236.610 1015.365,231.398 1007.981,228.339 ZM820.400,373.649 C810.714,385.463 799.254,394.809 786.018,401.689 C772.779,408.569 758.566,412.009 743.380,412.009 C731.813,412.009 721.225,410.028 711.611,406.067 C701.997,402.106 693.705,396.373 686.739,388.867 C679.770,381.362 674.335,372.189 670.436,361.348 C666.533,350.507 664.584,338.139 664.584,324.239 C664.584,306.450 667.369,289.703 672.944,273.996 C678.516,258.292 686.144,244.532 695.831,232.717 C705.514,220.905 716.941,211.592 730.108,204.781 C743.276,197.973 757.521,194.566 772.851,194.566 C784.415,194.566 795.006,196.546 804.620,200.507 C814.235,204.468 822.523,210.201 829.492,217.707 C836.458,225.212 841.893,234.421 845.795,245.330 C849.695,256.243 851.647,268.575 851.647,282.335 C851.647,299.987 848.858,316.666 843.287,332.370 C837.712,348.077 830.083,361.837 820.400,373.649 ZM802.739,238.555 C795.074,228.688 783.997,223.753 769.507,223.753 C759.193,223.753 749.892,226.499 741.604,231.987 C733.312,237.480 726.242,244.845 720.389,254.086 C714.537,263.331 710.007,273.996 706.804,286.088 C703.597,298.179 701.997,310.828 701.997,324.031 C701.997,343.491 705.791,358.189 713.387,368.124 C720.980,378.062 732.094,383.030 746.725,383.030 C756.894,383.030 766.162,380.251 774.523,374.691 C782.883,369.134 789.990,361.733 795.842,352.488 C801.694,343.247 806.220,332.578 809.427,320.487 C812.631,308.395 814.235,295.749 814.235,282.543 C814.235,263.087 810.401,248.425 802.739,238.555 ZM635.323,240.639 C634.069,241.336 632.674,241.682 631.143,241.682 C629.190,241.682 627.276,240.815 625.395,239.076 C623.514,237.339 621.074,235.395 618.080,233.238 C615.082,231.085 611.319,229.140 606.793,227.401 C602.263,225.665 596.447,224.795 589.341,224.795 C579.726,224.795 570.634,227.401 562.065,232.613 C553.496,237.825 546.004,244.949 539.596,253.982 C533.186,263.018 528.134,273.719 524.443,286.088 C520.750,298.460 518.904,311.730 518.904,325.907 C518.904,334.526 519.878,342.344 521.831,349.361 C523.780,356.381 526.706,362.358 530.609,367.290 C534.508,372.225 539.283,376.046 544.926,378.756 C550.569,381.467 557.153,382.822 564.678,382.822 C570.948,382.822 576.519,382.164 581.398,380.841 C586.274,379.522 590.595,377.890 594.357,375.942 C598.119,373.997 601.427,371.876 604.285,369.583 C607.139,367.290 609.719,365.173 612.018,363.225 C614.317,361.280 616.407,359.648 618.289,358.325 C620.170,357.006 622.083,356.345 624.036,356.345 C626.822,356.345 629.190,357.527 631.143,359.889 L640.339,371.147 C633.092,379.069 626.231,385.672 619.752,390.952 C613.272,396.236 606.757,400.438 600.209,403.565 C593.658,406.692 586.865,408.881 579.831,410.132 C572.793,411.383 565.233,412.009 557.153,412.009 C544.890,412.009 534.058,409.924 524.652,405.754 C515.247,401.585 507.373,395.715 501.034,388.138 C494.692,380.564 489.885,371.460 486.612,360.827 C483.337,350.195 481.701,338.487 481.701,325.698 C481.701,308.603 484.382,292.205 489.748,276.498 C495.110,260.793 502.602,246.894 512.216,234.802 C521.831,222.710 533.254,213.052 546.494,205.823 C559.730,198.598 574.292,194.982 590.177,194.982 C604.109,194.982 615.813,197.452 625.290,202.383 C634.764,207.319 643.056,214.511 650.163,223.961 L638.458,237.929 C637.622,239.043 636.577,239.945 635.323,240.639 ZM461.851,221.355 C460.597,223.788 459.202,225.977 457.671,227.922 L335.609,380.111 L440.114,380.111 L436.770,409.090 L287.537,409.090 L289.418,393.663 C289.695,391.858 290.427,389.737 291.612,387.304 C292.795,384.874 294.225,382.545 295.897,380.320 L418.586,227.088 L315.753,227.088 L319.306,197.901 L466.031,197.901 L464.150,213.746 C463.869,216.387 463.105,218.925 461.851,221.355 ZM202.052,409.090 L227.551,197.901 L264.128,197.901 L238.629,409.090 L202.052,409.090 ZM196.099,132.963 C194.496,133.449 192.441,133.690 189.933,133.690 C188.679,133.690 187.321,133.690 185.858,133.690 C184.395,133.690 182.827,133.690 181.155,133.690 C175.162,133.690 169.623,134.556 164.539,136.289 C159.451,138.022 154.957,140.827 151.058,144.707 C147.155,148.586 143.879,153.645 141.234,159.880 C138.586,166.115 136.704,173.737 135.591,182.741 L133.083,202.071 L185.962,202.071 L182.409,228.756 L130.993,228.756 L109.883,402.210 L100.268,445.365 C97.897,455.789 91.490,461.001 81.039,461.001 L66.409,461.001 L94.625,229.381 L73.724,226.671 C71.353,225.977 69.472,225.003 68.081,223.753 C66.686,222.502 65.991,220.697 65.991,218.332 L67.663,202.071 L97.969,202.071 L100.477,181.640 C102.009,169.548 105.039,158.811 109.569,149.430 C114.096,140.048 119.811,132.126 126.708,125.663 C133.605,119.201 141.476,114.301 150.326,110.966 C159.173,107.630 168.683,105.962 178.856,105.962 C187.494,105.962 195.368,107.389 202.474,110.236 L198.921,129.331 C198.640,131.270 197.699,132.481 196.099,132.963 Z" class="cls-1"/>\\r\\n                                     <g>\\r\\n                                         <ellipse cx="253.297" cy="143.703" rx="19.891" ry="20.297" class="cls-2"/>\\r\\n                                         <ellipse cx="295.11" cy="106.25" rx="19.891" ry="20.281" class="cls-2"/>\\r\\n                                         <ellipse cx="236.453" cy="82.828" rx="23.453" ry="23.922" class="cls-2"/>\\r\\n                                         <g>\\r\\n                                         <path d="M275.410,38.217 L275.410,38.217 C276.112,37.872 277.052,38.220 277.508,38.994 L279.162,41.796 C279.619,42.570 279.420,43.477 278.718,43.821 L278.718,43.821 C278.016,44.166 277.077,43.818 276.620,43.044 L274.966,40.242 C274.509,39.468 274.708,38.562 275.410,38.217 Z" class="cls-1"/>\\r\\n                                         <path d="M269.503,44.207 L269.503,44.207 C269.927,43.441 270.835,43.197 271.531,43.661 L274.052,45.341 C274.748,45.806 274.968,46.802 274.544,47.568 L274.544,47.568 C274.120,48.334 273.212,48.578 272.516,48.114 L269.996,46.433 C269.300,45.969 269.079,44.972 269.503,44.207 Z" class="cls-1"/>\\r\\n                                         <path d="M267.143,53.051 L267.143,53.051 C267.162,52.156 267.838,51.445 268.653,51.465 L271.603,51.534 C272.418,51.553 273.063,52.294 273.044,53.189 L273.044,53.189 C273.025,54.084 272.349,54.794 271.534,54.775 L268.583,54.706 C267.768,54.687 267.123,53.946 267.143,53.051 Z" class="cls-1"/>\\r\\n                                         <path d="M269.325,61.995 L269.325,61.995 C268.987,61.279 269.329,60.321 270.087,59.855 L272.835,58.168 C273.593,57.702 274.482,57.905 274.820,58.621 L274.820,58.621 C275.158,59.337 274.817,60.295 274.058,60.761 L271.311,62.448 C270.552,62.913 269.663,62.711 269.325,61.995 Z" class="cls-1"/>\\r\\n                                         <path d="M275.198,68.019 L275.198,68.019 C274.447,67.587 274.208,66.661 274.663,65.951 L276.311,63.380 C276.766,62.670 277.743,62.445 278.494,62.878 L278.494,62.878 C279.245,63.310 279.484,64.236 279.029,64.946 L277.381,67.517 C276.926,68.227 275.949,68.452 275.198,68.019 Z" class="cls-1"/>\\r\\n                                         <path d="M283.870,70.427 L283.870,70.427 C282.992,70.407 282.296,69.718 282.314,68.887 L282.382,65.877 C282.401,65.046 283.128,64.388 284.005,64.408 L284.005,64.408 C284.883,64.428 285.579,65.117 285.561,65.948 L285.493,68.958 C285.474,69.789 284.747,70.447 283.870,70.427 Z" class="cls-1"/>\\r\\n                                         <path d="M292.265,68.397 L292.265,68.397 C291.550,68.740 290.594,68.394 290.128,67.625 L288.444,64.839 C287.979,64.070 288.182,63.168 288.896,62.826 L288.896,62.826 C289.611,62.483 290.568,62.829 291.033,63.598 L292.717,66.384 C293.182,67.153 292.980,68.055 292.265,68.397 Z" class="cls-1"/>\\r\\n                                         <path d="M298.279,62.442 L298.279,62.442 C297.848,63.204 296.923,63.447 296.214,62.985 L293.648,61.314 C292.939,60.853 292.715,59.862 293.146,59.101 L293.146,59.101 C293.578,58.340 294.503,58.097 295.212,58.558 L297.778,60.229 C298.487,60.690 298.711,61.681 298.279,62.442 Z" class="cls-1"/>\\r\\n                                         <path d="M300.683,53.650 L300.683,53.650 C300.664,54.540 299.975,55.246 299.145,55.227 L296.141,55.158 C295.311,55.139 294.655,54.402 294.674,53.513 L294.674,53.513 C294.694,52.623 295.382,51.917 296.212,51.936 L299.216,52.005 C300.046,52.024 300.703,52.760 300.683,53.650 Z" class="cls-1"/>\\r\\n                                         <path d="M298.240,44.425 L298.240,44.425 C298.582,45.161 298.273,46.164 297.552,46.666 L294.938,48.483 C294.216,48.985 293.354,48.795 293.012,48.058 L293.012,48.058 C292.671,47.322 292.979,46.319 293.701,45.817 L296.315,44.000 C297.037,43.498 297.899,43.688 298.240,44.425 Z" class="cls-1"/>\\r\\n                                         <path d="M292.443,38.301 L292.443,38.301 C293.177,38.733 293.428,39.689 293.005,40.438 L291.471,43.147 C291.047,43.896 290.109,44.152 289.375,43.720 L289.375,43.720 C288.642,43.288 288.390,42.331 288.814,41.583 L290.348,38.873 C290.771,38.125 291.709,37.869 292.443,38.301 Z" class="cls-1"/>\\r\\n                                         <path d="M284.136,36.000 L284.136,36.000 C283.285,36.019 282.609,36.704 282.628,37.529 L282.693,40.516 C282.712,41.341 283.416,41.994 284.267,41.974 L284.267,41.974 C285.118,41.955 285.794,41.270 285.775,40.445 L285.710,37.458 C285.691,36.633 284.987,35.980 284.136,36.000 Z" class="cls-1"/>\\r\\n                                      </g>\\r\\n                                    </g>\\r\\n                                </svg>\\r\\n\\t\\t\\t\\t\\t\\t\\t</div>\\r\\n\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t<a href="#signup">\\r\\n\\t\\t\\t\\t\\t\\t<li class="right callToAction OrangeButton">Registrarse</li>\\r\\n\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t<a href="#login">\\r\\n\\t\\t\\t\\t\\t\\t<li class="right softUnderline size18">Iniciar Sesi\\xc3\\xb3n</li>\\r\\n\\t\\t\\t\\t\\t</a>\\r\\n                    <a href="\', escape=False)'
+p109
+sI62
+S"response.write(URL('newcourses'))"
+p110
+sI63
+S'response.write(\'">\\r\\n                        <li class="right size18">Crear Curso</li>\\r\\n                    </a>\\r\\n\\t\\t\\t\\t</ul>\\r\\n\\t\\t\\t</nav>\\r\\n\\t\\t</header>\\r\\n\\t\\t<main>\\r\\n\\t\\t\\t<span class="space50 block"></span>\\r\\n\\t\\t\\t<section id="first">\\r\\n\\t\\t\\t\\t<article id="block1" class="centered960px">\\r\\n\\t\\t\\t\\t\\t<span class="space20 block"></span>\\r\\n\\t\\t\\t\\t\\t<h1 class="lightHighlight size40 title">\\xc2\\xa1Aprende a dise\\xc3\\xb1ar sitios web de una forma f\\xc3\\xa1cil e intuitiva!</h1>\\r\\n\\t\\t\\t\\t\\t<span class="space10 block"></span>\\r\\n\\t\\t\\t\\t\\t<h3 class="lightHighlight size22 subtitle">Aprender\\xc3\\xa1s:</h3>\\r\\n\\t\\t\\t\\t\\t<span class="space0 block"></span>\\r\\n\\t\\t\\t\\t\\t<ul class="lightHighlight prettyBullet size20">\\r\\n\\t\\t\\t\\t\\t\\t<li><p>Aspectos b\\xc3\\xa1sicos de dise\\xc3\\xb1o</p></li>\\r\\n\\t\\t\\t\\t\\t\\t<li><p>Programaci\\xc3\\xb3n b\\xc3\\xa1sica</p></li>\\r\\n\\t\\t\\t\\t\\t\\t<li><p>Lenguajes para web: HTML, CSS y Javascript</p></li>\\r\\n\\t\\t\\t\\t\\t\\t<li><p>Las estrategias y herramientas para trabajar m\\xc3\\xa1s r\\xc3\\xa1pido y eficientemente</p></li>\\r\\n\\t\\t\\t\\t\\t</ul>\\r\\n\\r\\n\\t\\t\\t\\t\\t<span class="space10 block"></span>\\r\\n\\t\\t\\t\\t\\t<p class="lightHighlight size22 thin centerOnPage">Prueba sin cuenta o <a href="#signup"><span class="callToAction size24">Reg\\xc3\\xadstrate ya!</span></a></p>\\r\\n\\t\\t\\t\\t\\t<span class="space20 block"></span>\\r\\n\\t\\t\\t\\t\\t<span class="clearfix block"></span>\\r\\n\\t\\t\\t\\t</article>\\r\\n\\t\\t\\t</section>\\r\\n\\t\\t\\t<div class="blankSpace"></div>\\r\\n\\t\\t\\t<section id="second">\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<!-- Second Section -->\\r\\n\\t\\t\\t\\t<article id="block2" class="centered960px">\\r\\n\\t\\t\\t\\t\\t<span class="space20 block"></span>\\r\\n\\t\\t\\t\\t\\t<h1 class="size30 title">Sigue el camino o aventurate sin orden</h1>\\r\\n\\t\\t\\t\\t\\t<h3 class="size26 subtitle">Aprende lo que quieras en el orden que elijas</h3>\\r\\n\\t\\t\\t\\t\\t<span class="space20 block"></span>\\r\\n\\t\\t\\t\\t\\t<ul><!--  \\r\\n\\t\\t\\t\\t\\t\\t--><li>\\r\\n\\t\\t\\t\\t\\t\\t\\t<a href="course.html">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<img src="" alt="" class="courseImg">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<p class="size18">Curso 1</p>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<!-- <p class="size14">23 lecciones</p> -->\\r\\n\\t\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t</li><!--\\r\\n\\t\\t\\t\\t\\t\\t--><li>\\r\\n\\t\\t\\t\\t\\t\\t\\t<a>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<img src="#" alt="" class="courseImg soon">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<p class="size18">Curso 2</p>\\r\\n\\t\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t</li><!--\\r\\n\\t\\t\\t\\t\\t\\t--><li>\\r\\n\\t\\t\\t\\t\\t\\t\\t<a>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<img src="#" alt="" class="courseImg soon">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<p class="size18">Curso 3</p>\\r\\n\\t\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t</li><!--\\r\\n\\t\\t\\t\\t\\t\\t--><li>\\r\\n\\t\\t\\t\\t\\t\\t\\t<a>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<img src="#" alt="" class="courseImg soon">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<p class="size18">Curso 4</p>\\r\\n\\t\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t</li><!--\\r\\n\\t\\t\\t\\t\\t--></ul>\\r\\n\\t\\t\\t\\t</article>\\r\\n\\t\\t\\t</section>\\r\\n\\t\\t\\t<div class="blankSpace"></div>\\r\\n\\t\\t\\t<section id="third">\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<!-- Third Section -->\\r\\n\\t\\t\\t\\t<article id="block3" class="centered960px">\\r\\n\\t\\t\\t\\t\\t<span class="space20 block"></span>\\r\\n\\t\\t\\t\\t\\t<h1 class="size30 title">Qu\\xc3\\xa9 es fizcode?</h1>\\r\\n\\t\\t\\t\\t\\t<h3 class="size26 subtitle">Sobre Nosotros...</h3>\\r\\n\\t\\t\\t\\t\\t<span class="space20 block"></span>\\r\\n\\t\\t\\t\\t</article>\\r\\n\\t\\t\\t</article>\\r\\n\\t\\t\\t<div class="blankSpace"></div>\\r\\n\\t\\t</main>\\r\\n\\r\\n\\t\\t<footer>\\r\\n\\t\\t\\t<div class="centered960px">\\r\\n\\t\\t\\t\\t<div class="clearFix">\\r\\n\\t\\t\\t\\t\\t<ul class="size14">\\r\\n\\t\\t\\t\\t\\t\\t<a href="">\\r\\n\\t\\t\\t\\t\\t\\t\\t<li class="strong">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\tFizcode\\r\\n\\t\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t<a href="">\\r\\n\\t\\t\\t\\t\\t\\t\\t<li>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t&copy; Copyright 2015\\r\\n\\t\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t<a href="">\\r\\n\\t\\t\\t\\t\\t\\t\\t<li>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\tAviso Legal\\r\\n\\t\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t<a href="">\\r\\n\\t\\t\\t\\t\\t\\t\\t<li>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\tContacto\\r\\n\\t\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t<a href="">\\r\\n\\t\\t\\t\\t\\t\\t\\t<li>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\tBlog\\r\\n\\t\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t</ul>\\r\\n\\t\\t\\t\\t</div>\\r\\n\\t\\t\\t</div>\\r\\n\\t\\t</footer>\\r\\n\\t\\t<div id="login" class="modal">\\r\\n\\t\\t\\t<div>\\r\\n\\t\\t\\t\\t<a href="#" class="closeModal">&times;</a>\\r\\n\\t\\t\\t\\t<form>\\r\\n\\t\\t\\t\\t\\t<fieldset>\\r\\n\\t\\t\\t\\t\\t\\t<h4 class="size24 regular">Bienvenido de vuelta!</h4>\\r\\n\\t\\t\\t\\t\\t\\t<span class="space10 block"></span>\\r\\n\\t\\t\\t\\t\\t\\t<!-- <label for="email" class="size20 thin">Correo electr\\xc3\\xb3nico o usuario:</label> -->\\r\\n\\t\\t\\t\\t\\t\\t<input type="email" id="email" name="usrEmail" required class="size20" placeholder="Correo electr\\xc3\\xb3nico o usuario">\\r\\n\\t\\t\\t\\t\\t\\t<!-- <label for="password" class="size20 thin">Contrase\\xc3\\xb1a:</label> -->\\r\\n\\t\\t\\t\\t\\t\\t<input type="password" id="password" name="usrPassword" required class="size20" placeholder="Contrase\\xc3\\xb1a">\\r\\n\\t\\t\\t\\t\\t</fieldset>\\r\\n\\t\\t\\t\\t\\t<label class="rememberLabel thin size18 left"><input type="checkbox" name="remember" value="Yes" class="rememberInput">Remember me</label>\\r\\n\\t\\t\\t\\t\\t<button type="submit" class="size20 thin OrangeBG right">Iniciar sesi\\xc3\\xb3n</button>\\r\\n\\t\\t\\t\\t\\t<a href="" class="thin size14 forgotPassword left">\\xc2\\xbfOlvidaste tu contrase\\xc3\\xb1a?</a>\\r\\n\\t\\t\\t\\t</form>\\r\\n\\t\\t\\t\\t<span class="clearFix space10 block"></span>\\r\\n\\t\\t\\t\\t<span class="separator"></span>\\r\\n\\t\\t\\t\\t<div>\\r\\n\\t\\t\\t\\t\\t<h4 class="size24 regular">Con\\xc3\\xa9ctate con alguna red social</h4>\\r\\n\\t\\t\\t\\t\\t<span class="space10 block"></span>\\r\\n\\t\\t\\t\\t\\t<ul class="socialConnect">\\r\\n\\t\\t\\t\\t\\t\\t<a href="">\\r\\n\\t\\t\\t\\t\\t\\t\\t<li class="FbBG size24">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="65" height="65" viewBox="0 0 512 512">\\r\\n  <defs>\\r\\n    <style>\\r\\n      .FBL-1 {\\r\\n        fill: #fff;\\r\\n        fill-rule: evenodd;\\r\\n      }\\r\\n    </style>\\r\\n  </defs>\\r\\n  <path d="M353.488,512.010 L353.488,313.498 L419.825,313.498 L429.789,236.485 L353.488,236.485 L353.488,187.115 C353.488,164.740 359.482,149.493 391.566,149.493 L432.485,149.506 L432.485,80.357 C425.405,79.416 401.117,77.500 372.859,77.500 C313.862,77.500 273.504,113.325 273.504,179.463 L273.504,236.485 L206.497,236.485 L206.497,313.498 L273.488,313.498 L273.488,512.010 L353.488,512.010 Z" class="FBL-1"/>\\r\\n</svg>\\r\\n                                <p>Facebook</p>\\r\\n\\t\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t\\t<!-- <a href=""><li class="TwBG size24"><p>Twitter</p></li></a> -->\\r\\n\\t\\t\\t\\t\\t\\t<a href="">\\r\\n\\t\\t\\t\\t\\t\\t\\t<li class="GsigninBG size24">\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="65" height="65" viewBox="0 0 512 512">\\r\\n  <defs>\\r\\n    <style>\\r\\n      .GSL-1 {\\r\\n        fill: #fff;\\r\\n        fill-rule: evenodd;\\r\\n      }\\r\\n    </style>\\r\\n  </defs>\\r\\n  <path d="M319.200,71.314 C322.547,73.404 326.314,76.455 330.498,80.462 C334.513,84.645 338.451,89.786 342.302,95.886 C345.984,101.636 349.246,108.431 352.094,116.272 C354.435,124.115 355.610,133.263 355.610,143.720 C355.292,162.891 351.083,178.224 342.981,189.724 C339.007,195.304 334.797,200.441 330.352,205.148 C325.428,209.853 320.187,214.647 314.628,219.525 C311.450,222.837 308.514,226.580 305.815,230.763 C302.639,235.121 301.049,240.175 301.049,245.926 C301.049,251.503 302.678,256.119 305.937,259.778 C308.704,263.268 311.393,266.314 314.003,268.929 L332.087,283.827 C343.327,293.066 353.184,303.255 361.656,314.409 C369.640,325.737 373.797,340.550 374.122,358.848 C374.122,384.810 362.716,407.813 339.905,427.854 C316.249,448.592 282.114,459.309 237.509,460.008 C200.168,459.656 172.286,451.655 153.872,436.003 C135.287,421.389 125.990,403.910 125.990,383.561 C125.990,373.644 129.013,362.601 135.059,350.425 C140.926,338.247 151.548,327.549 166.922,318.336 C184.191,308.419 202.330,301.811 221.329,298.507 C240.150,295.720 255.780,294.159 268.218,293.810 C264.375,288.729 260.949,283.297 257.942,277.513 C254.432,271.909 252.680,265.161 252.680,257.274 C252.680,252.547 253.346,248.600 254.684,245.448 C255.854,242.118 256.939,239.055 257.942,236.254 C251.884,236.952 246.175,237.299 240.813,237.299 C212.434,236.952 190.802,227.979 175.924,210.379 C160.349,194.001 152.563,174.924 152.563,153.143 C152.563,126.831 163.596,102.964 185.662,81.528 C200.819,68.986 216.567,60.796 232.905,56.960 C249.076,53.654 264.236,51.995 278.385,51.995 L385.002,51.995 L352.074,71.314 L319.200,71.314 ZM339.795,379.795 C339.795,366.200 335.379,354.346 326.554,344.242 C317.217,334.652 302.622,322.890 282.760,308.945 C279.364,308.594 275.377,308.424 270.795,308.424 C268.076,308.072 261.117,308.424 249.914,309.469 C238.877,311.036 227.591,313.561 216.051,317.048 C213.332,318.095 209.513,319.662 204.593,321.757 C199.668,324.020 194.663,327.247 189.571,331.429 C184.646,335.782 180.490,341.188 177.093,347.638 C173.188,354.436 171.238,362.626 171.238,372.214 C171.238,391.036 179.721,406.547 196.698,418.752 C212.824,430.951 234.892,437.225 262.900,437.576 C288.023,437.225 307.204,431.649 320.443,420.843 C333.343,410.207 339.795,396.524 339.795,379.795 ZM265.464,222.709 C279.498,222.187 291.192,217.122 300.549,207.515 C305.060,200.707 307.961,193.725 309.249,186.563 C310.021,179.408 310.411,173.384 310.411,168.492 C310.411,147.363 305.035,126.060 294.283,104.581 C289.242,94.279 282.607,85.898 274.374,79.437 C265.971,73.327 256.313,70.096 245.391,69.745 C230.943,70.096 218.927,75.946 209.354,87.295 C201.277,99.171 197.414,112.442 197.762,127.106 C197.762,146.488 203.402,166.661 214.690,187.613 C220.151,197.393 227.205,205.686 235.843,212.494 C244.481,219.309 254.355,222.709 265.464,222.709 Z" class="GSL-1"/>\\r\\n</svg>\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t<p>Google</p>\\r\\n\\t\\t\\t\\t\\t\\t\\t</li>\\r\\n\\t\\t\\t\\t\\t\\t</a>\\r\\n\\t\\t\\t\\t\\t</ul>\\r\\n\\t\\t\\t\\t</div>\\r\\n\\t\\t\\t</div>\\r\\n\\t\\t</div>\\r\\n\\t\\t<div id="signup" class="modal">\\r\\n\\t\\t\\t<div>\\r\\n\\t\\t\\t\\t<a href="#" class="closeModal">&times;</a>\\r\\n\\t\\t\\t\\t<form>\\r\\n\\t\\t\\t\\t\\t<fieldset class="size20">\\r\\n\\t\\t\\t\\t\\t\\t<h4 class="size24 regular">\\xc3\\x9anete a nosotros!</h4>\\r\\n\\t\\t\\t\\t\\t\\t\', escape=False)'
+p111
+ssg83
+S'()'
+p112
+sg85
+S'<module>'
+p113
+sasS'pyver'
+p114
+S'Python 2.7.9: C:\\Users\\maxse_000\\Downloads\\Installers_Setups\\web2py_win\\web2py\\web2py.exe (prefix: C:\\Python27)'
+p115
+sS'session'
+p116
+g57
+(S's:\x01\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">last_orderby</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_query</td><td style="vertical-align:top;">:</td><td><div>db.auth_user.id&gt;0</div></td></tr></table></div>'
+tRp117
+sS'etype'
+p118
+S"<type 'exceptions.NameError'>"
+p119
+sS'date'
+p120
+S'Tue Aug 04 13:35:25 2015'
+p121
+sS'response'
+p122
+g57
+(S's\x84B\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x07D3C7E0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_fizcode</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-9167d1f7-95f4-46b0-9d4c-094981fafaeb<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>/fizcode/static/js/jquery.js</div></td></tr><tr><td><div>/fizcode/static/css/calendar.css</div></td></tr><tr><td><div>/fizcode/static/js/calendar.js</div></td></tr><tr><td><div>/fizcode/static/js/web2py.js</div></td></tr><tr><td><div>/fizcode/static/style.css</div></td></tr><tr><td><div>/fizcode/static/normalize.css</div></td></tr><tr><td><div>/fizcode/static/style_small.css</div></td></tr><tr><td><div>/fizcode/static/login.css</div></td></tr><tr><td><div>/fizcode/static/login-small.css</div></td></tr><tr><td><div>/fizcode/static/login_large.css</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">form_label_separator</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">formstyle</td><td style="vertical-align:top;">:</td><td><div>bootstrap3_inline</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">google_analytics_id</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">logo</td><td style="vertical-align:top;">:</td><td><div><a class="navbar-brand" href="http://www.web2py.com/" id="web2py-logo"><b>web<span>2</span>py</b>&trade;&nbsp;</a></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div><table><tr><td><div>Inicio</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/fizcode/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Mis Sitios</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/site</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Esta Aplicaci\xc3\xb3n</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Design</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/design/fizcode</div></td></tr></table></div></td></tr><tr><td><div><li class="divider"></li></div></td></tr><tr><td><div><table><tr><td><div>Controlador</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/fizcode/controllers/default.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Vista</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/fizcode/views/default/index.html</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Modelo BDD</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/fizcode/models/db.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Modelo "menu"</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/fizcode/models/menu.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Config.ini</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/fizcode/private/appconfig.ini</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Dise\xc3\xb1o de p\xc3\xa1gina</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/fizcode/views/layout.html</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Hoja de estilo</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/fizcode/static/css/web2py-bootstrap3.css</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Base de datos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/fizcode/appadmin/index</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Errores</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/errors/fizcode</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Acerca de</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/about/fizcode</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>web2py.com</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Descargas</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/download</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Soporte</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/support</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Demostraci\xc3\xb3n</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/demo_admin</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Ejemplos R\xc3\xa1pidos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/examples/default/examples</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>FAQ</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/AlterEgo</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>V\xc3\xaddeos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/videos/</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Aplicaciones Libres</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/appliances</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/plugins</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Recetas</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2pyslices.com/</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Documentaci\xc3\xb3n</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Online book</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book</div></td></tr></table></div></td></tr><tr><td><div><li class="divider"></li></div></td></tr><tr><td><div><table><tr><td><div>Prefacio</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/00</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Introducci\xc3\xb3n</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/01</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Python</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/02</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Resumen</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/03</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>El N\xc3\xbacleo</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/04</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Las Vistas</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/05</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Base de datos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/06</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Formularios y validadores</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/07</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Correo electr\xc3\xb3nico y SMS</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/08</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Control de Acceso</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/09</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Servicios</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/10</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Recetas AJAX</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/11</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Componentes y Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/12</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Recetas de despliegue</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/13</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Otras Recetas</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/14</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Helping web2py</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/15</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Buy web2py\'s book</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://stores.lulu.com/web2py</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Comunidad</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>None</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Grupos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/usergroups</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Twitter</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://twitter.com/web2py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Chat en vivo</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://webchat.freenode.net/?channels=web2py</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">author</td><td style="vertical-align:top;">:</td><td><div>Your Name &lt;you@example.com&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">description</td><td style="vertical-align:top;">:</td><td><div>a cool new app</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generator</td><td style="vertical-align:top;">:</td><td><div>Web2py Web Framework</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">keywords</td><td style="vertical-align:top;">:</td><td><div>web2py, python, framework</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^default/\\w+\\.py$</div></td></tr><tr><td><div>^default/index/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_key</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_fizcode</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;C:\\\\Users\\\\maxse_000\\\\Downloads\\\\Installers_Setups\\\\web2py_win\\\\web2py\\\\applications\\\\fizcode\\\\sessions\\\\1fe\\\\026\\\\127.0.0.1-9167d1f7-95f4-46b0-9d4c-094981fafaeb&#x27;, mode &#x27;rb+&#x27; at 0x07FB63E8&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\maxse_000\\Downloads\\Installers_Setups\\web2py_win\\web2py\\applications\\fizcode\\sessions\\127.0.0.1-9167d1f7-95f4-46b0-9d4c-094981fafaeb</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>2d0a729fc474319e4377a0dde7d6eecb</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-9167d1f7-95f4-46b0-9d4c-094981fafaeb</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_fizcode</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_locked</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>fizcode</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">subtitle</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">title</td><td style="vertical-align:top;">:</td><td><div>Fizcode</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>default/index.html</div></td></tr></table></div>'
+tRp123
+sS'locals'
+p124
+(dp125
+S'Service'
+p126
+S"<class 'gluon.tools.Service'>"
+p127
+sS'OBJECT'
+p128
+S"<class 'gluon.html.OBJECT'>"
+p129
+sS'SQLDB'
+p130
+S"<class 'pydal.base.DAL'>"
+p131
+sg116
+S"<Storage {'last_orderby': None, 'last_query': 'd...a0cfe', 'e2ab02e9-f2a7-40fc-9854-9624cb662d43']}>"
+p132
+sS'LINK'
+p133
+S"<class 'gluon.html.LINK'>"
+p134
+sS'BR'
+p135
+S"<class 'gluon.html.BR'>"
+p136
+sS'local_import'
+p137
+S'<function <lambda>>'
+p138
+sS'OPTGROUP'
+p139
+S"<class 'gluon.html.OPTGROUP'>"
+p140
+sS'__package__'
+p141
+S'None'
+p142
+sS'PRE'
+p143
+S"<class 'gluon.html.PRE'>"
+p144
+sS'IS_INT_IN_RANGE'
+p145
+S"<class 'gluon.validators.IS_INT_IN_RANGE'>"
+p146
+sS'IS_LOWER'
+p147
+S"<class 'gluon.validators.IS_LOWER'>"
+p148
+sS'IS_STRONG'
+p149
+S"<class 'gluon.validators.IS_STRONG'>"
+p150
+sS'cache'
+p151
+S'<gluon.cache.Cache object>'
+p152
+sS'IS_IN_DB'
+p153
+S"<class 'gluon.validators.IS_IN_DB'>"
+p154
+sS'TAG'
+p155
+S'<gluon.html.__TAG__ object>'
+p156
+sS'SQLField'
+p157
+S"<class 'pydal.objects.Field'>"
+p158
+sS'mail'
+p159
+S'<gluon.tools.Mail object>'
+p160
+sS'BODY'
+p161
+S"<class 'gluon.html.BODY'>"
+p162
+sS'IS_DATE_IN_RANGE'
+p163
+S"<class 'gluon.validators.IS_DATE_IN_RANGE'>"
+p164
+sS'IFRAME'
+p165
+S"<class 'gluon.html.IFRAME'>"
+p166
+sS'URL'
+p167
+S'<function URL>'
+p168
+sS'__file__'
+p169
+S"r'C:\\Users\\maxse_000\\Downloads\\Installers_Setups\\w...2py\\applications\\fizcode\\views\\default/index.html'"
+p170
+sS'db'
+p171
+S'<DAL uri="sqlite://storage.sqlite">'
+p172
+sS'auth'
+p173
+S'<gluon.tools.Auth object>'
+p174
+sS'P'
+S"<class 'gluon.html.P'>"
+p175
+sS'TFOOT'
+p176
+S"<class 'gluon.html.TFOOT'>"
+p177
+sS'XHTML'
+p178
+S"<class 'gluon.html.XHTML'>"
+p179
+sS'ON'
+p180
+S'True'
+p181
+sS'OL'
+p182
+S"<class 'gluon.html.OL'>"
+p183
+sS'TEXTAREA'
+p184
+S"<class 'gluon.html.TEXTAREA'>"
+p185
+sS'MENU'
+p186
+S"<class 'gluon.html.MENU'>"
+p187
+sS'IS_IMAGE'
+p188
+S"<class 'gluon.validators.IS_IMAGE'>"
+p189
+sS'EM'
+p190
+S"<class 'gluon.html.EM'>"
+p191
+sS'CODE'
+p192
+S"<class 'gluon.html.CODE'>"
+p193
+sS'HTTP'
+p194
+S"<class 'gluon.http.HTTP'>"
+p195
+sS'HR'
+p196
+S"<class 'gluon.html.HR'>"
+p197
+sS'IS_DATETIME'
+p198
+S"<class 'gluon.validators.IS_DATETIME'>"
+p199
+sS'STYLE'
+p200
+S"<class 'gluon.html.STYLE'>"
+p201
+sS'LABEL'
+p202
+S"<class 'gluon.html.LABEL'>"
+p203
+sS'CLEANUP'
+p204
+S"<class 'gluon.validators.CLEANUP'>"
+p205
+sS'plugins'
+p206
+S'<gluon.tools.PluginManager object>'
+p207
+sS'SELECT'
+p208
+S"<class 'gluon.html.SELECT'>"
+p209
+sS'CENTER'
+p210
+S"<class 'gluon.html.CENTER'>"
+p211
+sS'Auth'
+p212
+S"<class 'gluon.tools.Auth'>"
+p213
+sS'DEVELOPMENT_MENU'
+p214
+g181
+sS'__builtins__'
+p215
+S"{'ArithmeticError': <type 'exceptions.ArithmeticError'>, 'AssertionError': <type 'exceptions.AssertionError'>, 'AttributeError': <type 'exceptions.AttributeError'>, 'BaseException': <type 'exceptions.BaseException'>, 'BufferError': <type 'exceptions.BufferError'>, 'BytesWarning': <type 'exceptions.BytesWarning'>, 'DeprecationWarning': <type 'exceptions.DeprecationWarning'>, 'EOFError': <type 'exceptions.EOFError'>, 'Ellipsis': Ellipsis, 'EnvironmentError': <type 'exceptions.EnvironmentError'>, ...}"
+p216
+sS'HTML'
+p217
+S"<class 'gluon.html.HTML'>"
+p218
+sS'SQLFORM'
+p219
+S"<class 'gluon.sqlhtml.SQLFORM'>"
+p220
+sS'LOAD'
+p221
+S'<function LOAD>'
+p222
+sS'redirect'
+p223
+S'<function redirect>'
+p224
+sS'FIELDSET'
+p225
+S"<class 'gluon.html.FIELDSET'>"
+p226
+sS'IS_EQUAL_TO'
+p227
+S"<class 'gluon.validators.IS_EQUAL_TO'>"
+p228
+sS'embed64'
+p229
+S'<function embed64>'
+p230
+sS'IS_LIST_OF'
+p231
+S"<class 'gluon.validators.IS_LIST_OF'>"
+p232
+sS'INPUT'
+p233
+S"<class 'gluon.html.INPUT'>"
+p234
+sS'EMBED'
+p235
+S"<class 'gluon.html.EMBED'>"
+p236
+sS'_'
+S'<function _>'
+p237
+sS'myconf'
+p238
+S"{'forms': {'formstyle': 'bootstrap3_inline', 'se...'you@gmail.com', 'server': 'smtp.gmail.com:587'}}"
+p239
+sS'H2'
+p240
+S"<class 'gluon.html.H2'>"
+p241
+sS'H3'
+p242
+S"<class 'gluon.html.H3'>"
+p243
+sS'AppConfig'
+p244
+S'<function AppConfig>'
+p245
+sS'H1'
+p246
+S"<class 'gluon.html.H1'>"
+p247
+sS'H6'
+p248
+S"<class 'gluon.html.H6'>"
+p249
+sS'H4'
+p250
+S"<class 'gluon.html.H4'>"
+p251
+sS'H5'
+p252
+S"<class 'gluon.html.H5'>"
+p253
+sS'UL'
+p254
+S"<class 'gluon.html.UL'>"
+p255
+sS'IS_UPPER'
+p256
+S"<class 'gluon.validators.IS_UPPER'>"
+p257
+sS'xmlescape'
+p258
+S'<function xmlescape>'
+p259
+sS'IS_TIME'
+p260
+S"<class 'gluon.validators.IS_TIME'>"
+p261
+sS'OPTION'
+p262
+S"<class 'gluon.html.OPTION'>"
+p263
+sS'TITLE'
+p264
+S"<class 'gluon.html.TITLE'>"
+p265
+sS'CRYPT'
+p266
+S"<class 'gluon.validators.CRYPT'>"
+p267
+sS'IS_EMPTY_OR'
+p268
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p269
+sS'MARKMIN'
+p270
+S"<class 'gluon.html.MARKMIN'>"
+p271
+sS'__name__'
+p272
+S"'__restricted__'"
+p273
+sS'STRONG'
+p274
+S"<class 'gluon.html.STRONG'>"
+p275
+sS'COL'
+p276
+S"<class 'gluon.html.COL'>"
+p277
+sS'mc1'
+p278
+S"'col-md-9'"
+p279
+sS'mc0'
+p280
+S"'col-md-12'"
+p281
+sS'service'
+p282
+S'<gluon.tools.Service object>'
+p283
+sS'SCRIPT'
+p284
+S"<class 'gluon.html.SCRIPT'>"
+p285
+sS'TABLE'
+p286
+S"<class 'gluon.html.TABLE'>"
+p287
+sS'IS_IPV4'
+p288
+S"<class 'gluon.validators.IS_IPV4'>"
+p289
+sS'IS_LENGTH'
+p290
+S"<class 'gluon.validators.IS_LENGTH'>"
+p291
+sS'IS_IPV6'
+p292
+S"<class 'gluon.validators.IS_IPV6'>"
+p293
+sS'XML'
+p294
+S"<class 'gluon.html.XML'>"
+p295
+sS'B'
+S"<class 'gluon.html.B'>"
+p296
+sS'IMG'
+p297
+S"<class 'gluon.html.IMG'>"
+p298
+sS'SQLTABLE'
+p299
+S"<class 'gluon.sqlhtml.SQLTABLE'>"
+p300
+sS'IS_MATCH'
+p301
+S"<class 'gluon.validators.IS_MATCH'>"
+p302
+sS'IS_ALPHANUMERIC'
+p303
+S"<class 'gluon.validators.IS_ALPHANUMERIC'>"
+p304
+sS'SPAN'
+p305
+S"<class 'gluon.html.SPAN'>"
+p306
+sS'IS_JSON'
+p307
+S"<class 'gluon.validators.IS_JSON'>"
+p308
+sS'IS_IPADDRESS'
+p309
+S"<class 'gluon.validators.IS_IPADDRESS'>"
+p310
+sS'IS_SLUG'
+p311
+S"<class 'gluon.validators.IS_SLUG'>"
+p312
+sS'BEAUTIFY'
+p313
+S"<class 'gluon.html.BEAUTIFY'>"
+p314
+sS'META'
+p315
+S"<class 'gluon.html.META'>"
+p316
+sS'BUTTON'
+p317
+S"<class 'gluon.html.BUTTON'>"
+p318
+sS'IS_DATE'
+p319
+S"<class 'gluon.validators.IS_DATE'>"
+p320
+sS'IS_EMAIL'
+p321
+S"<class 'gluon.validators.IS_EMAIL'>"
+p322
+sS'middle_column'
+p323
+S"{0: 'col-md-12', 1: 'col-md-9', 2: 'col-md-6'}"
+p324
+sS'IS_NOT_EMPTY'
+p325
+S"<class 'gluon.validators.IS_NOT_EMPTY'>"
+p326
+sS'IS_FLOAT_IN_RANGE'
+p327
+S"<class 'gluon.validators.IS_FLOAT_IN_RANGE'>"
+p328
+sS'TBODY'
+p329
+S"<class 'gluon.html.TBODY'>"
+p330
+sS'CAT'
+p331
+S"<class 'gluon.html.CAT'>"
+p332
+sS'Field'
+p333
+S"<class 'pydal.objects.Field'>"
+p334
+sS'mc2'
+p335
+S"'col-md-6'"
+p336
+sS'IS_LIST_OF_EMAILS'
+p337
+S"<class 'gluon.validators.IS_LIST_OF_EMAILS'>"
+p338
+sS'DIV'
+p339
+S"<class 'gluon.html.DIV'>"
+p340
+sS'LEGEND'
+p341
+S"<class 'gluon.html.LEGEND'>"
+p342
+sS'COLGROUP'
+p343
+S"<class 'gluon.html.COLGROUP'>"
+p344
+sS'DAL'
+p345
+S"<class 'pydal.base.DAL'>"
+p346
+sS'ASSIGNJS'
+p347
+S'<function ASSIGNJS>'
+p348
+sS'TR'
+p349
+S"<class 'gluon.html.TR'>"
+p350
+sS'LI'
+p351
+S"<class 'gluon.html.LI'>"
+p352
+sS'TH'
+p353
+S"<class 'gluon.html.TH'>"
+p354
+sS'TD'
+p355
+S"<class 'gluon.html.TD'>"
+p356
+sS'PluginManager'
+p357
+S"<class 'gluon.tools.PluginManager'>"
+p358
+sS'IS_URL'
+p359
+S"<class 'gluon.validators.IS_URL'>"
+p360
+sS'A'
+S"<class 'gluon.html.A'>"
+p361
+sS'HEAD'
+p362
+S"<class 'gluon.html.HEAD'>"
+p363
+sS'IS_DATETIME_IN_RANGE'
+p364
+S"<class 'gluon.validators.IS_DATETIME_IN_RANGE'>"
+p365
+sS'FORM'
+p366
+S"<class 'gluon.html.FORM'>"
+p367
+sS'I'
+S"<class 'gluon.html.I'>"
+p368
+sS'IS_NOT_IN_DB'
+p369
+S"<class 'gluon.validators.IS_NOT_IN_DB'>"
+p370
+sg122
+S"<Storage {'body': <cStringIO.StringO object at 0...a> at 0x07B14FB0>, 'view': 'default/index.html'}>"
+p371
+sS'THEAD'
+p372
+S"<class 'gluon.html.THEAD'>"
+p373
+sS'ANY_OF'
+p374
+S"<class 'gluon.validators.ANY_OF'>"
+p375
+sS'IS_NULL_OR'
+p376
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p377
+sg56
+S"<Storage {'_vars': None, 'function': 'index', 'c...s\\\\web2py_win\\\\web2py\\\\applications\\\\fizcode\\\\'}>"
+p378
+sS'IS_EXPR'
+p379
+S"<class 'gluon.validators.IS_EXPR'>"
+p380
+sS'T'
+S'<gluon.languages.translator object>'
+p381
+sS'IS_IN_SET'
+p382
+S"<class 'gluon.validators.IS_IN_SET'>"
+p383
+sS'IS_UPLOAD_FILENAME'
+p384
+S"<class 'gluon.validators.IS_UPLOAD_FILENAME'>"
+p385
+sS'TT'
+p386
+S"<class 'gluon.html.TT'>"
+p387
+sS'IS_DECIMAL_IN_RANGE'
+p388
+S"<class 'gluon.validators.IS_DECIMAL_IN_RANGE'>"
+p389
+sssS'traceback'
+p390
+S'Traceback (most recent call last):\n  File "C:\\Users\\maxse_000\\Downloads\\Installers_Setups\\web2py_win\\web2py\\gluon\\restricted.py", line 227, in restricted\n    exec ccode in environment\n  File "C:\\Users\\maxse_000\\Downloads\\Installers_Setups\\web2py_win\\web2py\\applications\\fizcode\\views\\default/index.html", line 64, in <module>\n    </a>\nNameError: name \'udata\' is not defined\n'
+p391
+s.

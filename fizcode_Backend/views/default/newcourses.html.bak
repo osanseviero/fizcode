@@ -1,0 +1,37 @@
+{{extend 'layout.html'}}
+<!DOCTYPE html>
+<html lang="{{=T.accepted_language or 'en'}}">
+	<head>
+		<meta charset="utf-8">
+		<title>{{=response.title or request.application}}</title>
+		<meta name="application-name" content="{{=request.application}}">
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="{{=URL('static','css/style.css')}}"/>
+		<link rel="stylesheet" href="{{=URL('static','css/style_small.css')}}" media="screen and (max-width:500px)"/>
+		<link rel="stylesheet" href="{{=URL('static','css/login.css')}}"/>
+		<link rel="stylesheet" href="{{=URL('static','css/login_small.css')}}" media="screen and (max-width:500px)"/>
+		<link rel="stylesheet" href="{{=URL('static','css/login_large.css')}}" media="screen and (min-width:500px)"/>
+		<link rel="stylesheet" href="{{=URL('static','css/normalize.css')}}"/>
+	</head>
+	<body>
+		<div id="login" class="centered960px clearFix">
+			<div>
+				<h2 class="size30 title">Nuevo Curso</h2>
+				<form>
+					<fieldset class="size20">
+						<h2 class="size24 thin">
+							¡Escribe nuevas aventuras!
+						</h2>
+						{{=form.custom.begin}}
+						<div id="username">Título del Curso{{=form.custom.widget.title}}</div>
+						<span class="space10 block"></span>
+						<div>{{=form.custom.widget.image}}</div>
+						<div id="username">Descripción corta del Curso<br>{{=form.custom.widget.body}}</div><span class="space10 block"></span>
+						<div class="thin OrangeBG">{{=form.custom.submit}}</div>
+						{{=form.custom.end}}
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
