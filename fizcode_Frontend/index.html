@@ -6,7 +6,6 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style/style.css">
 		<link rel="stylesheet" href="css/style/style-small.css" media="screen and (max-width:500px)">
-		<!-- <link rel="stylesheet" href="css/style/style-large.css" media="screen and (min-width:500px)"> -->
 		<link rel="stylesheet" href="css/login/login.css">
 		<link rel="stylesheet" href="css/login/login-small.css" media="screen and (max-width:500px)">
 		<link rel="stylesheet" href="css/login/login-large.css" media="screen and (min-width:500px)">
@@ -15,7 +14,7 @@
 	</head>
 	<body>
 		<header>
-			<nav class="centered960px size20">
+			<nav class="centered960px ">
 				<ul>
 					<a href="index.html">
 						<li class="left">
@@ -25,10 +24,10 @@
 						</li>
 					</a>
 					<a href="#signup">
-						<li class="right callToAction OrangeButton">Registrarse</li>
+						<li class="right callToAction OrangeButton"><p>Registrarse</p></li>
 					</a>
 					<a href="#login">
-						<li class="right softUnderline size18">Iniciar Sesión</li>
+						<li class="right"><p class="softUnderline">Iniciar Sesión</p></li>
 					</a>
 				</ul>
 			</nav>
@@ -38,11 +37,11 @@
 			<section id="first">										
 				<article id="block1" class="centered960px">
 					<span class="space20 block"></span>
-					<h1 class="lightHighlight size40 title">¡Aprende a diseñar sitios web de una forma fácil e intuitiva!</h1>
+					<h1 class="lightHighlight ">¡Aprende a diseñar sitios web de una forma fácil e intuitiva!</h1>
 					<span class="space10 block"></span>
-					<h3 class="lightHighlight size22 subtitle">Aprenderás:</h3>
 					<span class="space0 block"></span>
-					<ul class="lightHighlight prettyBullet size20">
+					<ul class="lightHighlight prettyBullet ">
+						<p>Aprenderás:</p>
 						<li><p>Aspectos básicos de diseño</p></li>
 						<li><p>Programación básica</p></li>
 						<li><p>Lenguajes para web: HTML, CSS y Javascript</p></li>
@@ -50,63 +49,63 @@
 					</ul>
 
 					<span class="space10 block"></span>
-					<p class="lightHighlight size22 thin centerOnPage">Prueba sin cuenta o <a href="#signup"><span class="callToAction size24">Regístrate ya!</span></a></p>
+					<p class="lightHighlight  thin centerOnPage">Prueba sin cuenta o <a href="#signup"><span class="callToAction ">Regístrate ya!</span></a></p>
 					<span class="space20 block"></span>
 					<span class="clearfix block"></span>
 				</article>
 			</section>
-			<div class="blankSpace"></div>
 			<section id="second">											<!-- Second Section -->
 				<article id="block2" class="centered960px">
 					<span class="space20 block"></span>
-					<h1 class="size30 title">Sigue el camino o aventurate sin orden</h1>
-					<h3 class="size26 subtitle">Aprende lo que quieras en el orden que elijas</h3>
+					<h3 class="regular">Sigue el camino o aventurate sin orden</h3>
+					<h4 class="">Aprende lo que quieras en el orden que elijas</h4>
 					<span class="space20 block"></span>
 					<ul><!--  
 						--><li>
 							<a href="course.html">
 								<img src="" alt="" class="courseImg">
-								<p class="size18">Curso 1</p>
-								<!-- <p class="size14">23 lecciones</p> -->
+								<p class="">Dessarrollo Front-end
+								</p>
+								<!-- <p class="">23 lecciones</p> -->
 							</a>
 						</li><!--
 						--><li>
 							<a>
-								<img src="#" alt="" class="courseImg soon">
-								<p class="size18">Curso 2</p>
+								<span class="soon"></span>
+								<img src="" alt="" class="courseImg">
+								<p class="">Curso 2</p>
 							</a>
 						</li><!--
 						--><li>
 							<a>
-								<img src="#" alt="" class="courseImg soon">
-								<p class="size18">Curso 3</p>
+								<span class="soon"></span>
+								<img src="" alt="" class="courseImg">
+								<p class="">Curso 3</p>
 							</a>
 						</li><!--
 						--><li>
 							<a>
-								<img src="#" alt="" class="courseImg soon">
-								<p class="size18">Curso 4</p>
+								<span class="soon"></span>
+								<img src="" alt="" class="courseImg">
+								<p class="">Curso 4</p>
 							</a>
 						</li><!--
 					--></ul>
 				</article>
 			</section>
-			<div class="blankSpace"></div>
 			<section id="third">											<!-- Third Section -->
 				<article id="block3" class="centered960px">
 					<span class="space20 block"></span>
-					<h1 class="size30 title">Qué es fizcode?</h1>
-					<h3 class="size26 subtitle">Sobre Nosotros...</h3>
+					<h3 class="regular">Qué es fizcode?</h3>
+					<h4 class="">Sobre Nosotros...</h4>
 					<span class="space20 block"></span>
 				</article>
 			</article>
-			<div class="blankSpace"></div>
 		</main>
-
 		<footer>
 			<div class="centered960px">
 				<div class="clearFix">
-					<ul class="size14">
+					<ul class="">
 						<a href="">
 							<li class="strong">
 								Fizcode
@@ -140,33 +139,33 @@
 			<div>
 				<a href="#" class="closeModal">&times;</a>
 				<form>
-					<fieldset>
-						<h4 class="size24 regular">Bienvenido de vuelta!</h4>
+					<fieldset class="">
+						<h4 class="regular">Bienvenido de vuelta!</h4>
 						<span class="space10 block"></span>
-						<!-- <label for="email" class="size20 thin">Correo electrónico o usuario:</label> -->
-						<input type="email" id="email" name="usrEmail" required class="size20" placeholder="Correo electrónico o usuario">
-						<!-- <label for="password" class="size20 thin">Contraseña:</label> -->
-						<input type="password" id="password" name="usrPassword" required class="size20" placeholder="Contraseña">
+						<!-- <label for="email" class=" thin">Correo electrónico o usuario:</label> -->
+						<input type="email" id="email" name="usrEmail" required class="" placeholder="Correo electrónico o usuario">
+						<!-- <label for="password" class=" thin">Contraseña:</label> -->
+						<input type="password" id="password" name="usrPassword" required class="" placeholder="Contraseña">
+						<label class="rememberLabel thin  left"><input type="checkbox" name="remember" value="Yes" class="rememberInput">Recuérdame</label>
+						<button type="submit" class="thin OrangeBG right">Iniciar sesión</button>
+						<a href="" class="thin  forgotPassword left">¿Olvidaste tu contraseña?</a>
 					</fieldset>
-					<label class="rememberLabel thin size18 left"><input type="checkbox" name="remember" value="Yes" class="rememberInput">Remember me</label>
-					<button type="submit" class="size20 thin OrangeBG right">Iniciar sesión</button>
-					<a href="" class="thin size14 forgotPassword left">¿Olvidaste tu contraseña?</a>
 				</form>
-				<span class="clearFix space10 block"></span>
+				<span class="clearFix block"></span>
 				<span class="separator"></span>
 				<div>
-					<h4 class="size24 regular">Conéctate con alguna red social</h4>
+					<h4 class=" regular">Conéctate con alguna red social</h4>
 					<span class="space10 block"></span>
 					<ul class="socialConnect">
 						<a href="">
-							<li class="FbBG size24">
+							<li class="FbBG ">
 								<img src="resources/connect/facebook.svg">
 								<p>Facebook</p>
 							</li>
 						</a>
-						<!-- <a href=""><li class="TwBG size24"><p>Twitter</p></li></a> -->
+						<!-- <a href=""><li class="TwBG "><p>Twitter</p></li></a> -->
 						<a href="">
-							<li class="GsigninBG size24">
+							<li class="GsigninBG ">
 								<img src="resources/connect/google.svg">
 								<p>Google</p>
 							</li>
@@ -179,8 +178,8 @@
 			<div>
 				<a href="#" class="closeModal">&times;</a>
 				<form>
-					<fieldset class="size20">
-						<h4 class="size24 regular">Únete a nosotros!</h4>
+					<fieldset class="">
+						<h4 class=" regular">Únete a nosotros!</h4>
 						<span class="space10 block"></span>
 						<!-- <label for="email" class="thin">Usuario:</label> -->
 						<input type="text" id="username" name="username" required placeholder="Usuario">
@@ -190,26 +189,26 @@
 						<input type="password" id="password" name="usrPassword" required placeholder="Contraseña">
 						<!-- <label for="password" class="thin">Confirmar Contraseña:</label> -->
 						<input type="password" id="passwordConfirm" name="usrPasswordConfrm" required placeholder="Confirmar Contraseña">
-					</fieldset>
 
-					<!-- <label class="rememberLabel thin size18 left"><input type="checkbox" name="remember" value="Yes" class="rememberInput">Remember me</label> -->
-					<button type="submit" class="size20 thin OrangeBG right">Regístrame!</button>
+						<!-- <label class="rememberLabel thin  left"><input type="checkbox" name="remember" value="Yes" class="rememberInput">Remember me</label> -->
+						<button type="submit" class=" thin OrangeBG right">Regístrame!</button>
+					</fieldset>
 				</form>
-				<span class="clearFix space10 block"></span>
+				<span class="clearFix block"></span>
 				<span class="separator"></span>
 				<div>
-					<h4 class="size24 regular">Conéctate más facilmente</h4>
+					<h4 class=" regular">Conéctate más facilmente</h4>
 					<span class="space10 block"></span>
 					<ul class="socialConnect">
 						<a href="">
-							<li class="FbBG size24">
+							<li class="FbBG ">
 								<img src="resources/connect/facebook.svg">
 								<p>Facebook</p>
 							</li>
 						</a>
-						<!-- <a href=""><li class="TwBG size24"><p>Twitter</p></li></a> -->
+						<!-- <a href=""><li class="TwBG "><p>Twitter</p></li></a> -->
 						<a href="">
-							<li class="GsigninBG size24">
+							<li class="GsigninBG ">
 								<img src="resources/connect/google.svg">
 								<p>Google</p>
 							</li>

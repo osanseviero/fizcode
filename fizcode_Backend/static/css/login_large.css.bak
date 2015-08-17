@@ -1,6 +1,3 @@
-body{
-	font-size: calc(100%- 2px);
-}
 .modal {
 	display: block;
 	opacity: 0;

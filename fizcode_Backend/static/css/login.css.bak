@@ -22,16 +22,14 @@ button {
 	border-radius: 7px;
 	background-color: #2482C0;
 	border: none;
-	margin-right: 13px;
 }
 
 fieldset {
 	border: none;
+	font-size: 20px;
 }
 
-.rememberLabel {
-	margin: 0px 0px 0px 14px;
-}
+fieldset > h4 {margin: 0;}
 
 .rememberInput {
 	display: inline;
@@ -50,7 +48,7 @@ fieldset {
 
 .forgotPassword {
 	display: block;
-	margin: 5px 0px 0px 14px;
+	float: left;
 }
 
 .forgotPassword:hover {
@@ -86,59 +84,59 @@ fieldset {
 	transition: opacity .3s	ease-out;*/
 }
 
-	.modal > div {
-		position: relative;
-		margin: auto;
-		min-width: 240px;
-		max-width: 480px;
-		padding: 5px 5px 5px 12px;
-		margin-top: 100px;
-		background-color: #EAEAEA;
-		border-radius: 15px;
-		-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.67);
-		-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.67);
-		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.67);
+.modal > div {
+	position: relative;
+	margin: auto;
+	min-width: 240px;
+	max-width: 480px;
+	padding: 5px 5px 5px 12px;
+	margin-top: 100px;
+	background-color: #EAEAEA;
+	border-radius: 15px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.67);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.67);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.67);
+}
+
+	.modal > div > div {
+		margin: 0px 14px 14px 14px;
 	}
 
-		.modal > div > div {
-			margin: 0px 14px 14px 14px;
-		}
+.socialConnect {
+	position: relative;
+	margin: auto;
+	text-align: center;
+}
 
-	.socialConnect {
+	.socialConnect li {
+		display: inline-block;
+		color: white;
 		position: relative;
-		margin: auto;
-		text-align: center;
+		height: 65px;
+		padding: 0px 0px 0px 65px;
+		border-radius: 3px;
+		line-height: 65px;
 	}
 
-		.socialConnect li {
-			display: inline-block;
-			color: white;
+	.socialConnect li:before {
+		content: "";
+		background-color: rgba(0,0,0,0.1);
+		height: 65px;
+		width: calc(100% - 65px);
+		display: block;
+		position: absolute;
+		right: 0px;
+		border-radius: 0px 3px 3px 0px;
+		z-index: 1;
+	}
+
+		.socialConnect li p {
 			position: relative;
-			height: 65px;
-			padding: 0px 0px 0px 65px;
-			border-radius: 3px;
-			line-height: 65px;
+			margin: 0px; 
+			z-index: 2;
 		}
 
-		.socialConnect li:before {
-			content: "";
-			background-color: rgba(0,0,0,0.1);
-			height: 65px;
-			width: calc(100% - 65px);
-			display: block;
+		.socialConnect img {
 			position: absolute;
-			right: 0px;
-			border-radius: 0px 3px 3px 0px;
-			z-index: 1;
+			left: 0px;
 		}
-
-			.socialConnect li p {
-				position: relative;
-				margin: 0px; 
-				z-index: 2;
-			}
-
-			.socialConnect img {
-				position: absolute;
-				left: 0px;
-			}

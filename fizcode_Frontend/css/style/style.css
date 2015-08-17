@@ -44,7 +44,7 @@ header {
 		transition: width .1s ease-out;
 	}
 
-	.logo :nth-child(1) {
+	.logo img {
 		position: absolute;
 		left: 0px;
 		width: 84px;
@@ -153,7 +153,6 @@ header {
 					background-image: url('../../resources/sprites/sprites.png');
 					background-size: 120%;
 					background-position: 0px 0px;
-					/*background-color: blue;*/
 
 					width: 141.4px;
 					height: 55px;
@@ -193,14 +192,8 @@ footer {
 	padding: 15px 0px 15px 0px;
 }
 
-	footer ul li{
+	footer ul li {
 		display: inline-block;
 		margin: 0px 16px 0px 16px;
-	}
-
-	footer img{
-		width: 14px;
-		height: 14px;
-		border-radius: 2px;
-		padding: 0px 6px 0px 6px;
+		font-size: 16.5px;
 	}
