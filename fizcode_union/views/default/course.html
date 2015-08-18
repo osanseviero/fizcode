@@ -1,0 +1,136 @@
+{{extend 'layout.html'}}
+        <!-- Stylesheets -->
+		<link rel="stylesheet" href="{{=URL('static', 'css/course/course.css')}}"/>
+
+		<!-- Compatibility for <details> on all browsers. -->
+		<link rel="stylesheet" type="text/css" href="{{=URL('static','css/details-shim/details-shim.css')}}"/>
+		<script type="text/javascript" src="{{=URL('static','js/details-shim/details-shim.js')}}"></script>
+
+		<!-- Pretty code blocks powered by google-code-prettify -->
+		<link href="{{=URL('static','js/prettify-code/prettify-fizcode.css')}}" type="text/css" rel="stylesheet"/>
+		<script type="text/javascript" src="{{=URL('static','js/prettify-code/prettify.js')}}"></script>
+	<body onload="prettyPrint()">
+		<main>
+			<span class="space50 block"></span>
+			<section id="second">
+				<article class="centered960px">
+					<div class="courseHeader">
+						<span class="space20 block"></span>
+						<h1 class="courseBanner">Desarrollo Front-end</h1> <!-- Título del curso! -->
+						<!-- Aquí iría un video de introducción -->
+						<!-- <span class="space10 block"></span> -->
+						<!-- <h3 class="">Descripción:</h3> -->
+						<span class="space10 block"></span>
+						<h4 class="">Esa es una descripción del curso que no debería pasar de 140 caractéres... Como un tweet!</h4>
+					</div>
+					<span class="space10 block"></span>
+
+					<h4 class="">Lecciones:</h4>
+					<ul class="numberedBullet">
+						<li><details open="open">
+							<summary>Introducción a la web</summary>
+							<p>Lección de HTML</p>
+							<pre rel="HTML" class="prettyprint lang-html"><code>&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt; &lt;!-- Aquí va el título del archivo --&gt; &lt;/title&gt;
+&lt;/head&gt;
+&lt;body class="cuerpo"&gt;
+	&lt;!-- Aquí va el cuerpo del texto --&gt;
+	&lt;header class="cabeza"&gt;
+	&lt;header/&gt;
+	&lt;main class="textoPrincipal"&gt;
+		&lt;!-- Aquí va todo lo importante... --&gt;
+	&lt;main/&gt;
+	&lt;footer class="pie"&gt;
+	&lt;footer/&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+						</details></li>
+						<li><details>
+							<summary>Entendiendo HTML</summary>
+							<p>Lección de HTML</p>
+							<pre rel="HTML" class="prettyprint lang-html"><code>&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt; &lt;!-- Aquí va el título del archivo --&gt; &lt;/title&gt;
+&lt;/head&gt;
+&lt;body class="cuerpo"&gt;
+	&lt;!-- Aquí va el cuerpo del texto --&gt;
+	&lt;header class="cabeza"&gt;
+	&lt;header/&gt;
+	&lt;main class="textoPrincipal"&gt;
+		&lt;!-- Aquí va todo lo importante... --&gt;
+	&lt;main/&gt;
+	&lt;footer class="pie"&gt;
+	&lt;footer/&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+						</details></li>
+						<li><details>
+							<summary>Entendiendo CSS</summary>
+							<p>Lección de CSS</p>
+							<pre rel="CSS" class="prettyprint lang-css"><code>* { display:block; }
+
+body.cuerpo {
+	font-size: 20px;
+	backgorund-color: #bbb;
+	// #bbb es un código de color en hexadecimal
+}
+
+.cabeza {
+	position: fixed;
+	display: block;
+	width: 100%;
+	top: 0;
+	margin: 0;
+}</code></pre>
+						</details></li>
+						<li><details>
+							<summary>HTML y CSS intermedio</summary>
+							<p>Lección de C++</p>
+							<pre rel="C++" class="prettyprint lang-cpp"><code>#include &lt;iostream&gt;
+
+int main()
+{
+	int var = 1;
+	cout << var << endl;
+	// 'cout' despliega texto a la pantalla y es parte de la librería '&lt;iostream&gt;'
+	// 'endl' hace un salto de línea
+
+	return var;
+	// return le devuelve un valor a la función. En este caso, regresa 1.
+}</code></pre>
+						</details></li>
+						<li><details>
+							<summary>CSS layouts</summary>
+							<p>Lección</p>
+						</details></li>
+						<li><details>
+							<summary>Pseudoselectores</summary>
+							<p>Lección</p>
+						</details></li>
+						<li><details>
+							<summary>Media Query</summary>
+							<p>Media Querries</p>
+							<pre rel="CSS" class="prettyprint lang-css"><code>@ media(screen and (min-width:500px;))
+
+body.cuerpo {
+	font-size: 20px;
+	backgorund: #bbb;
+	// #bbb es un código de color en hexadecimal
+}
+
+/*.cabeza {
+	position: fixed;
+	display: block;
+	width: 100%;
+	top: 0;
+	margin: 0;
+}*/</code></pre>
+						</details></li>
+					</ul>
+					<span class="space20 block"></span>
+				</article>
+			</section>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,1545 @@
+timestamp: 2015-08-03T19:57:37.222000
+CREATE TABLE auth_user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512),
+    registration_id CHAR(512)
+);
+success!
+timestamp: 2015-08-03T19:57:37.272000
+CREATE TABLE auth_group(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    role CHAR(512),
+    description TEXT
+);
+success!
+timestamp: 2015-08-03T19:57:37.326000
+CREATE TABLE auth_membership(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE
+);
+success!
+timestamp: 2015-08-03T19:57:37.656000
+CREATE TABLE auth_permission(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE,
+    name CHAR(512),
+    table_name CHAR(512),
+    record_id INTEGER
+);
+success!
+timestamp: 2015-08-03T19:57:37.698000
+CREATE TABLE auth_event(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    time_stamp TIMESTAMP,
+    client_ip CHAR(512),
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    origin CHAR(512),
+    description TEXT
+);
+success!
+timestamp: 2015-08-03T19:57:37.726000
+CREATE TABLE auth_cas(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    created_on TIMESTAMP,
+    service CHAR(512),
+    ticket CHAR(512),
+    renew CHAR(1)
+);
+success!
+timestamp: 2015-08-03T20:01:50.522000
+CREATE TABLE new_courses(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title CHAR(512),
+    body TEXT,
+    posted_on TIMESTAMP
+);
+success!
+timestamp: 2015-08-03T23:20:53.728000
+CREATE TABLE newcourse(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title CHAR(512),
+    body TEXT,
+    posted_ondatetime CHAR(512)
+);
+success!
+timestamp: 2015-08-03T23:21:28.902000
+CREATE TABLE new_course(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title CHAR(512),
+    body TEXT,
+    posted_ondatetime CHAR(512)
+);
+success!
+timestamp: 2015-08-03T23:21:40.651000
+ALTER TABLE new_courses ADD posted_ondatetime CHAR(512);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2015-08-04T11:19:12.622000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T11:19:46.888000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T11:20:07.182000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T11:20:28.366000
+ALTER TABLE new_courses ADD image CHAR(512);
+success!
+success!
+success!
+success!
+timestamp: 2015-08-04T11:22:00.322000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T11:22:28.290000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T11:23:04.232000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T11:23:28.470000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T11:24:28.383000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T11:25:28.266000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T11:26:28.293000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T11:27:23.671000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T11:27:28.286000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T11:27:54.908000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T11:27:58.158000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T11:28:23.546000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T11:28:28.285000
+ALTER TABLE new_courses ADD image CHAR(512);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2015-08-04T12:20:51.998000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:21:28.215000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:26:02.665000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:26:20.035000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:26:28.269000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:27:18.767000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:27:19.825000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:27:28.147000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:28:19.979000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:28:28.158000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:29:19.932000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:29:28.176000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:30:19.893000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:30:28.149000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:31:19.958000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:31:28.171000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:32:19.847000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:32:28.170000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:33:19.958000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:33:28.196000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:34:19.872000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:34:28.160000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:35:19.888000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:35:28.175000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:36:05.364000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:36:15.733000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:36:19.897000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:36:28.189000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:36:52.660000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:37:19.890000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:37:28.204000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:38:04.710000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:38:19.867000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:38:28.126000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:38:36.937000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:38:48.464000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:39:19.871000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:39:28.128000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:39:51.508000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:40:19.902000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:40:28.162000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:41:19.960000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:41:28.170000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:42:19.884000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:42:28.205000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:43:19.981000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:43:28.177000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:44:10.721000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:44:19.969000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:44:28.253000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:45:19.898000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:45:28.123000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:46:19.912000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:46:28.166000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:47:19.893000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:47:28.170000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:48:19.896000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:48:28.160000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:49:19.929000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:49:28.224000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:50:19.896000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:50:28.203000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:50:47.130000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:51:18.970000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:51:19.886000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:51:28.111000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:51:55.446000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:52:19.876000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:52:24.048000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:52:28.148000
+ALTER TABLE new_courses ADD file CHAR(512);
+timestamp: 2015-08-04T12:52:43.333000
+ALTER TABLE new_courses ADD file CHAR(512);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2015-08-04T12:53:50.458000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:54:19.856000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:54:28.126000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:55:19.868000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:55:28.294000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:56:19.880000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:56:28.135000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:57:19.837000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:57:28.186000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:58:19.826000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:58:28.148000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:59:19.908000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T12:59:28.170000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:00:19.878000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:00:28.121000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:01:19.959000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:01:28.207000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:02:19.895000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:02:28.144000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:03:19.894000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:03:28.129000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:04:19.891000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:04:28.150000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:05:19.892000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:05:28.154000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:06:19.872000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:06:28.140000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:07:19.861000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:07:28.139000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:08:19.847000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:08:28.114000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:09:19.927000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:09:28.186000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:10:19.899000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:10:28.175000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:11:19.912000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:11:28.274000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:12:19.826000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:12:25.354000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:12:28.157000
+ALTER TABLE new_courses ADD image CHAR(512);
+timestamp: 2015-08-04T13:12:46.633000
+ALTER TABLE new_courses ADD image CHAR(512);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
