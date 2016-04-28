@@ -1,0 +1,27 @@
+<section>
+   <div class="container">
+      <% if !@course.errors.empty? %>
+         <div class = "alert alert-error">
+            
+            <ul>
+               <% @course.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+               <% end %>
+            </ul>
+            
+         </div>
+      <% end %>
+
+      <div class = "well">
+         <%= form_for @course, html: { multipart: true } do |f| %>
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+            <%= f.label :description %>
+            <%= f.text_field :description %>
+            <%= f.label :attachment %>
+            <%= f.file_field :attachment %>
+            <%= f.submit "Save", class: "btn btn-primary" %>
+         <% end %>
+      </div>
+   </div>
+</section>

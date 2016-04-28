@@ -1,0 +1,153 @@
+<%= stylesheet_link_tag "courses", media: 'all' %>
+<section class="course-header course-orange">
+  <div class="container">
+    <div class="pager">
+      <li class="previous"><%= link_to "Todos los cursos", courses_path%></li> 
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <%= image_tag(@course.attachment_url, class: "img-responsive center-block img-course") %>
+      </div>
+      <div class="col-md-9">
+        <h1><%= @course.name %></h1>
+        <h2><%= @course.description %></h2>
+      </div>
+    </div>
+    <%if logged_in?%>
+      <%if current_user.admin?%>
+        <%= link_to "Editar curso", edit_course_path(@course), class: "btn btn-primary" %>
+        <%= link_to "Nueva lección", new_course_lesson_path(@course), class: "btn btn-primary" %>
+        <%= link_to "Borrar curso", course_path(@course), method: :delete, class: "btn btn-danger", data: {confirm: '¿Estás seguro que quieres borrar el curso?'} %>
+      <%end%>
+    <%end%>
+  </div>
+</section>
+<section class="course-lections">
+  <div class="container">
+    <h3>Lecciones:</h3>
+    <ol>
+      <% @course.lessons.each do |lesson| %>
+        <li>
+          <%= link_to ("<p>").html_safe + lesson.name, course_lesson_path(@course, lesson)%>
+          <%if logged_in? %>
+            <%if current_user.admin?%>
+              <%= link_to "Borrar", course_lesson_path(@course, lesson), method: :delete, class: "btn btn-danger btn-sm button-delete pull-right", data: {confirm: '¿Estás seguro que quieres borrar la lección?'} %>
+            <% end %>
+          <% end %>
+          </p>
+        </li>
+      <% end %>
+      <!-- <li>
+        <a href="lesson.html">
+          <p>Título Lección 1 <span class="bg-info"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Lección</span></p>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <p>Título Lección 2 <span class="bg-info"><span class="glyphicon glyphicon-film" aria-hidden="true"></span> Video</span></p>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <p>Título Lección 3 <span class="bg-info"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Ejercicio</span></p>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <p>Título Lección 4 <span class="bg-info"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Lección</span></p>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <p>Título Lección 5 <span class="bg-info"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Lección</span></p>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <p>Título Lección 6 <span class="bg-info"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> <span class="glyphicon glyphicon-film" aria-hidden="true"></span> Lección/Video</span></p>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <p>Título Lección 7 <span class="bg-info"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Ejercicio</span></p>
+        </a>
+      </li> -->
+    </ol>
+  </div>
+</section>
+<section class="course-detailed-info">
+  <div class="container">
+    <h3>Acerca de este curso:</h3>
+    <div class="row">
+      <div class="col-sm-4 col-sm-push-8">
+<!--         <h4>Instructor(es):</h4>
+        <div class="row">
+          <div class="col-sm-12"><p class="text-center">Nombre del instructor</p><p class="text-center"><small>Cargo del prof (Si aplica)</small></p></div>
+          <div class="col-sm-12"><p class="text-center">Nombre del instructor</p><p class="text-center"><small>Cargo del prof (Si aplica)</small></p></div>
+        </div> -->
+      </div>
+      <div class="col-sm-8 col-sm-pull-4">
+        <h4>Temas que se aprenden:</h4>
+        <ul> 
+          <% @course.temas.each do |tema| %>
+            <li>
+              <%= tema.name %>
+              <%if logged_in? %>
+                <%if current_user.admin?%>
+                  <%= link_to "Borrar", {:controller => 'temas', action: :destroy, :course_id => @course.id, :id => tema.id}, :remote => true, method: :delete, class: "btn btn-danger btn-sm button-delete"%>
+                <% end %>
+              <% end %>
+            </li>
+          <%end%>
+          <%if logged_in? %>
+            <%if current_user.admin?%>
+              <%=render "/temas/new"%>
+            <%end%>
+          <%end%>
+        </ul>
+      </div>
+    </div>
+    <h4>Apoyo de aprendizaje:</h4>
+    <ul> 
+      <% @course.helplinks.each do |helplink| %>
+        <li>
+          <%= link_to(helplink.title, helplink.link, target: "_blank") %>
+          <%if logged_in? %>
+            <%if current_user.admin?%>
+              <%= link_to "Borrar", {:controller => 'helplinks', action: :destroy, :course_id => @course.id, :id => helplink.id}, :remote => true, method: :delete, class: "btn btn-danger btn-sm button-delete"%>
+            <% end %>
+          <% end %>
+        </li>
+      <%end%>
+      <%if logged_in? %>
+        <%if current_user.admin?%>
+          <%=render "/helplinks/new"%>
+        <%end%>
+      <%end%>
+    </ul>
+    <h4>Referencias:</h4>
+    <ul>
+      <% @course.sources.each do |source| %>
+        <li>
+          <%= link_to(source.title, source.link, target: "_blank") %>
+          <%if logged_in? %>
+            <%if current_user.admin?%>
+              <%= link_to "Borrar", {:controller => 'sources', action: :destroy, :course_id => @course.id, :id => source.id}, :remote => true, method: :delete, class: "btn btn-danger btn-sm button-delete"%>
+            <% end %>
+          <% end %>
+        </li>
+      <%end%>
+      <%if logged_in? %>
+        <%if current_user.admin?%>
+          <%=render "/sources/new"%>
+        <%end%>
+      <%end%>
+    </ul>
+  </div>
+</section>
+
+<script type="text/javascript">
+  $('.button-delete').click(function() {
+    $(this).parent().fadeOut(1000);
+  });
+</script>

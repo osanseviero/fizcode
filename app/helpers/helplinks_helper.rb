@@ -1,0 +1,2 @@
+module HelplinksHelper
+end

@@ -1,0 +1,14 @@
+<section>
+	<div class="container">
+		<h1>Usuarios</h1>
+
+		<ul class="users">
+		  <% @user.each do |user| %>
+		    <li>
+		    	<%= link_to user.name, user %>
+		    	<%= button_to "delete", user, method: :delete, class: "btn btn-danger", data: { confirm: "Seguro quiere borrar el usuario?" } %>
+		    </li>
+		  <% end %>
+		</ul>
+	</div>
+</section>

@@ -1,0 +1,18 @@
+<!-- Login -->
+<%= form_for(:session, url: login_path) do |f| %>		 
+	<div class="form-group">
+		<%= f.label :mail, class: 'sr-only' %>
+		<%= f.email_field :mail, class: 'form-control', placeholder: 'Correo electrónico' %>
+	</div>
+	<div class="form-group">
+		<%= f.label :password, class: 'sr-only' %>
+		<%= f.password_field :password, class: 'form-control', placeholder: 'Contraseña'  %>
+	</div>
+<!-- 	<div class="checkbox">
+		<label><input type="checkbox" name="remember" value="Yes" class="rememberInput">Recuérdame</label>	
+	</div> -->
+	<div class="form-group">
+		<%= f.submit "Iniciar Sesión", class: "btn btn-orange" %>
+	</div>
+	<!-- <a href="resetPassword.html">¿Olvidaste tu contraseña?</a> -->
+<% end %>

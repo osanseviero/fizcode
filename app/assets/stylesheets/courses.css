@@ -1,0 +1,35 @@
+@import "bootstrap";
+
+html, body {
+	height: 100%;
+}
+
+.course-header {
+	background-color: #EAEAEA;
+	padding-bottom: 20px; 
+}
+
+.img-course {
+	height: 155px;
+	width: auto;
+	padding: 10px;
+}
+
+.course-lections {
+	background-color: #F0F0EF;
+	padding-bottom: 40px;
+}
+
+.course-lections li {
+	font-size: 18px;
+}
+
+.bg-info {
+	padding: 0px 3px;
+	border-radius: 5px;
+}
+
+.course-detailed-info {
+	background-color: #EAEAEA;
+	padding-bottom: 30px;
+}

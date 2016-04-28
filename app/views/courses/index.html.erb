@@ -1,0 +1,18 @@
+<section>
+	<div class="container">
+		<h2 class="regular">Cursos disponibles</h2>
+			<%if logged_in?%>
+			  <%if current_user.admin?%>
+			    <%= link_to "Nuevo curso", new_course_path, class: "btn btn-primary" %>
+			  <%end%>
+			<%end%>
+		<div class="row">
+			<% @courses.each do |course| %>
+				<div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+					<%=link_to image_tag(course.attachment_url, class: "img-course") + ("<p>").html_safe + course.name + ("</p>").html_safe + ("<span class=\"desc-course\">").html_safe + course.description + ("</span>").html_safe, course_path(course), :'data-toggle' => 'tooltip', :'data-placement' => 'bottom'%>
+					<span class="desc-course"><%= course.description%></span>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,45 @@
+<section id="first">
+	<div class="container">
+		<h1 class="hglight hglight-light">¡Aprende a diseñar sitios web de una forma fácil e intuitiva!</h1>
+		<br>
+		<h3 class="hglight hglight-light">Aprenderás:</h3>
+		<br>
+		<ul class="hglight hglight-light bullet-fizcode list-unstyled">
+			<li>Aspectos básicos de diseño</li>
+			<li>Programación básica</li>
+			<li>Lenguajes para web: HTML, CSS y Javascript</li>
+			<li>Las estrategias y herramientas para trabajar más rápido y eficientemente</li>
+		</ul>
+		<%if !logged_in?%>
+			<br>
+			<h4 class="hglight hglight-light">Prueba sin cuenta o <a class="signupButton"><button type="button" class="btn btn-orange btn-lg" data-toggle="modal" data-target="#signup">Regístrate ya!</button></a></h4>
+		<%end%>
+	</div>
+</section>
+<section id="second">
+	<div class="container">
+		<h2 class="regular">Sigue el camino o aventurate sin orden</h2>
+		<h3>Aprende lo que quieras en el orden que elijas</h3>
+		<ul>
+			<% Course.take(3).each do |course| %>
+				<div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+					<%=link_to image_tag(course.attachment_url, class: "img-course") + ("<p>").html_safe + course.name + ("</p>").html_safe + ("<span class=\"desc-course\">").html_safe + course.description + ("</span>").html_safe, course_path(course), :'data-toggle' => 'tooltip', :'data-placement' => 'bottom'%>
+					<span class="desc-course"><%=course.description%></span>
+				</div>
+			<% end %>
+			<div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+				<%=link_to image_tag("/assets/book_stack.png", class: "img-course") + "<p>Ver todos los cursos</p><span class=\"desc-course\" data-toggle = 'tooltip' data-placement = 'bottom'>Aprende de muchos cursos</span>".html_safe, courses_path%>
+			</div>
+		</ul>
+	</div>
+</section>
+<section id="third">
+	<div class="container">
+		<h2 class="regular">Qué es fizcode?</h2>
+		<h3>Sobre Nosotros...</h3>
+		<p>Somos un grupo de personas que compartimos la idea que cualquiera puede aprender a programar.</p>
+		<p>Nos imaginamos un mundo dónde todos son más que usuarios de computadoras, pero no estamos ni cerca a un mundo así.</p>
+		<p>Por esta razón, hemos creado esta plataforma dónde podemos compartir conocimiento básico de computación para todos que se dispongan a aprender algo nuevo.</p>
+		<p>Esperamos que esta plataforma sea de mucha utilidad para ti. Entra y descubre un mundo nuevo.</p>
+	</div>
+</section>
