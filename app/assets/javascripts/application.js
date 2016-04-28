@@ -16,3 +16,8 @@
 //= require ckeditor/init
 //= require_tree .
 //= require bootstrap-sprockets
+
+$(document).ready(function(){
+	$('.alert-dismissible').delay(3000).fadeOut(500);
+});
+

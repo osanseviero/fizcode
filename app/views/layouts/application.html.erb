@@ -11,7 +11,6 @@
 </head>
 <body>
 
-<%=render "/layouts/alerts"%>
 <% if logged_in?%>
   <%=render "/layouts/site_header_logged"%>
 <%else%>
@@ -19,6 +18,7 @@
 <%end%>
 
 <main class="site-main">
+<%=render "/layouts/alerts"%>
 <%= yield %>
 </main>
 
